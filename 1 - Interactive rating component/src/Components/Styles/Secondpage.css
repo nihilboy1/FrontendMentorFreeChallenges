@@ -1,0 +1,38 @@
+.box_img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.box_p {
+  display: flex;
+  justify-content: center;
+}
+#top_p {
+  background-color: hsl(216, 12%, 21%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 15px;
+  padding: 6px 10px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#thank {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#bot_p {
+  color: hsl(217, 12%, 63%);
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.bottom_div {
+  height: 45%;
+}
