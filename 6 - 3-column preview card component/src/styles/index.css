@@ -9,7 +9,6 @@
   font-size: 15px;
   color: white;
   font-family: 'Lexend Deca', sans-serif;
-  transition: border-radius 2s;
 }
 
 #root {
@@ -45,6 +44,7 @@
   padding: 10px 10px;
   width: 65%;
   font-size: 13px;
+  border: 1px solid white;
 }
 .content_box {
   display: flex;

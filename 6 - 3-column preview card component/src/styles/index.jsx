@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContentBox = styled.div`
-
   background-color: ${props => {
     return props.title === 'SEDANS'
       ? '#E28525'
@@ -28,13 +27,23 @@ export const ContentBox = styled.div`
 `
 
 export const ButtonBox = styled.button`
+  cursor: pointer;
+  transition: backgroud-color 800ms, color 800ms;
   color: ${props => {
     return props.title === 'SEDANS'
       ? '#E28525'
       : props.title === 'SUVS'
       ? '#016972'
-      : '#00403F'
+      : '#00403F';
   }};
+  &:hover {
+    color: white;
+    background-color: ${props => {
+      return props.title === 'SEDANS'
+        ? '#E28525'
+        : props.title === 'SUVS'
+        ? '#016972'
+        : '#00403F'
+    }};
+  }
 `
-
-
