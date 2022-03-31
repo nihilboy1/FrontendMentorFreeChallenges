@@ -45,6 +45,10 @@
   width: 65%;
   font-size: 13px;
   border: 1px solid white;
+  transition: margin 400ms;
+  transition: background-color 600ms;
+
+
 }
 .content_box {
   display: flex;
@@ -53,12 +57,26 @@
   padding: 25px 35px;
   height: 340px;
   width: 250px;
+  transition: width 400ms;
+
 }
+
 
 
 @media screen and (min-width: 850px) {
   .main_box {
     display: flex;
     border-radius: 10px;
+  }
+  .content_box {
+    height: 390px;
+  }
+
+  #button {
+    margin-top: 60px;
+  }
+
+  #description {
+    width: 167px;
   }
 }

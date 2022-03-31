@@ -28,7 +28,6 @@ export const ContentBox = styled.div`
 
 export const ButtonBox = styled.button`
   cursor: pointer;
-  transition: backgroud-color 800ms, color 800ms;
   color: ${props => {
     return props.title === 'SEDANS'
       ? '#E28525'
