@@ -45,7 +45,7 @@
   width: 65%;
   font-size: 13px;
   border: 1px solid white;
-  transition: margin 400ms, background-color 800ms linear;
+  transition: margin 600ms, background-color 600ms linear;
 }
 
 
@@ -56,7 +56,8 @@
   padding: 25px 35px;
   height: 340px;
   width: 250px;
-  transition: width 600ms;
+  transition: width 400ms;
+  transition: height 600ms ease-out;
 
 }
 
