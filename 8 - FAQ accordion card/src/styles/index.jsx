@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const Question_p = styled.p`
   &:hover {
-    color: ${(props) => {return props.isTrue ? '' : '#de5d35'}};
+    color: ${props => {
+      return props.isTrue ? '' : '#de5d35'
+    }};
   }
   transition: all 600ms;
   font-weight: ${props => {
@@ -11,7 +13,9 @@ export const Question_p = styled.p`
 `
 
 export const Answer_p = styled.p`
-  display: ${(props) => {return props.isTrue ? "block" : "none" }};
+  display: ${props => {
+    return props.isTrue ? 'block' : 'none'
+  }};
 `
 
 export const Arrow_img = styled.img`
