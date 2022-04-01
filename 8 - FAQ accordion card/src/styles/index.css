@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.darkcolor {
+  color: #181a31;
+}
+
+.lightcolor {
+  color: #181a317e;
+}
+.desktopgirlimage {
+  display: none;
+}
+
+.desktopshadow {
+  display: none;
+}
+.box_box {
+  display: none;
+}
+
+.caixa_da_caixa {
+  display: none;
+}
+
+#root {
+  padding: 130px 0px 50px 0px;
+  background-image: linear-gradient(#af68ea, #7b64e8);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main_box {
+  position: relative;
+  padding: 0px 20px 15px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  transition: width 400ms, height 400ms;
+}
+
+.mobile_shadow {
+  display: flex;
+  align-self: center;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.content_box {
+  transition: all 400ms;
+  min-height: 290px;
+}
+
+#faq {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.interactive_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question_box {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #181a3127;
+}
+#arrow {
+  cursor: pointer;
+}
+
+.question {
+  user-select: none; /* Standard */
+  transition: color 300ms;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.nada {
+  display: none;
+}
+
+.answer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #181a319f;
+}
+
+#mobile_girl_image {
+  position: absolute;
+  width: 200px;
+  top: -90px;
+  left: 49px;
+}
+
+@media screen and (min-width: 950px) {
+  
+  #mobile_girl_image,
+  .mobile_shadow {
+    display: none;
+  }
+
+  .main_box {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 850px;
+  }
+
+  .content_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    transition: all 400ms;
+    height: 320px;
+  }
+  .question_box {
+    width: 78%;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #181a3127;
+  }
+
+  #root {
+    padding: 90px;
+    background-image: linear-gradient(#af68ea, #7b64e8);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .desktopshadow {
+    position: absolute;
+    left: -470px;
+    top: -240px;
+    display: block;
+    width: 800px;
+  }
+
+  .desktopgirlimage {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    width: 400px;
+    left: -65px;
+    top: 50px;
+  }
+  .box_box {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: -110px;
+  }
+  .caixa_da_caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
