@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+  color: hsl(217, 19%, 35%);
+  transition: all 400ms;
+}
+
+body {
+  transition: none;
+
+  width: 100%;
+  height: 100vh;
+}
+
+#root {
+  transition: none;
+
+  background-color: #DFE8EF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image_box {
+  height: 40%;
+  width: 100%;
+}
+
+#headerimgmobile {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#main_box_container {
+  background-color: white;
+  border-radius: 10px;
+  width: 310px;
+  height: 470px;
+}
+
+#content_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  padding: 30px;
+}
+
+#texts_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+}
+
+#text_1 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+}
+#text_2{
+  margin-top: 15px;
+  font-size: 12px;
+  color: hsla(217, 19%, 35%, 0.548);
+  width: 98%;
+  font-weight: 700;
+}
+#user_box {
+  position: relative;
+  margin-bottom: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#share_icon_box {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 38px;
+}
+
+#name {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+#name_date_box{
+  margin-left: -30px;
+}
+
+#date {
+  color: hsla(217, 19%, 35%, 0.664);
+}
+
+#share_options{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #49556B;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 65px ;
+  bottom: -15px;
+  right: -30px;
+}
+
+#share {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.541);
+  letter-spacing: 5px;
+}
+
+#content_1{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  color: wheat;
+}
