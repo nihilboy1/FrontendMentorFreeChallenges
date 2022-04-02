@@ -9,6 +9,7 @@
   font-family: 'Manrope', sans-serif;
   color: hsl(217, 19%, 35%);
   transition: all 400ms;
+  border: 1opx;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
 
 #root {
   transition: none;
-
   background-color: #DFE8EF;
   height: 100%;
   width: 100%;
@@ -81,7 +81,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-#share_icon_box {
+.share_icon_box {
   cursor: pointer;
   border-radius: 50%;
   height: 30px;
@@ -103,7 +103,12 @@ body {
 }
 
 #name_date_box{
-  margin-left: -30px;
+  margin-left: 20px;
+  margin-right: 45px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 #date {
@@ -143,4 +148,111 @@ body {
   align-items: center;
   display: flex;
   color: wheat;
+}
+
+@media screen and (min-width: 850px) {
+  
+  #main_box_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    width: 620px;
+    height: 241px;
+  }
+  #image_box {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 705px;
+    overflow: hidden;
+    background-image: url("./images/drawers.jpg");
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  #headerimgmobile {
+    display: none;
+  }
+
+  #content_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 30px 30px 30px;
+  }
+
+  #texts_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  #text_2{
+    margin-top: 15px;
+    font-size: 11px;
+    color: hsla(217, 19%, 35%, 0.548);
+    width: 100%;
+    font-weight: 700;
+  }
+
+  #text_1 {
+    width: 97%;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  #user_box {
+    position: relative;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #name_date_box{
+    margin-left: -100px;
+    margin-right: 0px;
+
+  }
+
+  #share_options{
+    width: 230px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #49556B;
+    position: absolute;
+    border-radius: 10px;
+    height: 45px ;
+    bottom: 50px;
+    right: -98px;
+  }
+
+  #share_icon_box_2 {
+    display: none;
+  }
+
+  #content_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #pontinha {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #49556B;
+    bottom: 44px;
+    right: 7px;
+    transform: rotate(45deg);
+  }
+  
 }

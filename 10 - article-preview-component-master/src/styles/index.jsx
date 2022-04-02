@@ -21,3 +21,10 @@ export const Image = styled.img`
     return props.isTrue ? 'brightness(100)' : 'brightness(1)'
   }};
 `
+
+export const Pontinha = styled.div`
+  transition: all 400ms;
+  opacity: ${props => {
+    return props.isTrue ? '1' : '0'
+  }};
+`
