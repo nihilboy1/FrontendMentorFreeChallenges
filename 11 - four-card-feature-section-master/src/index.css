@@ -1,0 +1,18 @@
+* {
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(49, 32, 0);
+}
+
+body,
+#root {
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
