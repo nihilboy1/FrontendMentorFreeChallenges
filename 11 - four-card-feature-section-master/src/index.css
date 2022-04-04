@@ -45,7 +45,6 @@ body,
 
 #subtitle {
   color: #444456;
-
   font-weight: 600;
 }
 
@@ -90,7 +89,6 @@ body,
 }
 
 @media screen and (min-width: 780px) {
-  
   #main_container {
     padding: 25px;
     width: 800px;
@@ -119,8 +117,9 @@ body,
   #tool_box {
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
-    padding: 15px;
-    height: 170px;
+    padding: 20px;
+    height: 190px;
+    width: 280px;
     margin-bottom: 25px;
   }
 
@@ -149,17 +148,17 @@ body,
 
   #tool_img_box {
     display: flex;
-    height: 80px;
+    height: 90px;
     align-items: flex-end;
     justify-content: flex-end;
   }
 
   #tool_img {
-    width: 48px;
+    width: 50px;
   }
 
   #tool_desc {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: hsl(229, 6%, 66%);
     width: 100%;
   }
