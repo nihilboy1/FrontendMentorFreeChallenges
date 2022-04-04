@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 * {
   border: none;
   font-size: 16px;
@@ -5,14 +6,165 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid rgb(49, 32, 0);
+  font-family: 'Poppins', sans-serif;
+  color: #444456;
+  transition: all 400ms;
 }
 
 body,
 #root {
+  background-color: hsl(0, 0%, 98%);
+  padding: 20px 0px;
   width: 99vw;
-  height: 99vh;
+  min-height: 99vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: none;
+}
+
+#main_container {
+  padding: 25px;
+  width: 320px;
+}
+
+#text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+#subtitle {
+  color: #444456;
+
+  font-weight: 600;
+}
+
+#description {
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+  color: hsl(229, 6%, 66%);
+}
+
+#tool_box {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+  padding: 20px;
+  height: 180px;
+  margin-bottom: 25px;
+}
+
+#tool_title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#tool_img_box {
+  display: flex;
+  height: 70px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#tool_img {
+  width: 48px;
+}
+
+#tool_desc {
+  font-size: 0.7rem;
+  color: hsl(229, 6%, 66%);
+  width: 96%;
+}
+
+@media screen and (min-width: 780px) {
+  
+  #main_container {
+    padding: 25px;
+    width: 800px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  #tool_box {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    padding: 15px;
+    height: 170px;
+    margin-bottom: 25px;
+  }
+
+  #description {
+    display: flex;
+    width: 60%;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    color: hsl(229, 6%, 66%);
+  }
+
+  #tools_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #tool_title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #tool_img_box {
+    display: flex;
+    height: 80px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  #tool_img {
+    width: 48px;
+  }
+
+  #tool_desc {
+    font-size: 0.6rem;
+    color: hsl(229, 6%, 66%);
+    width: 100%;
+  }
+
+  .fixed_width {
+    width: 33%;
+  }
 }
