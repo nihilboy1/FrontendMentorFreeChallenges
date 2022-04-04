@@ -21,7 +21,7 @@ function App() {
         </p>
       </div>
       <main id="tools_container">
-        <div className='fixed_width'>
+        <div className="fixed_width" id='first_tool'>
           <Tool
             bordercolor={'blue'}
             title={'Supervisor'}
@@ -29,7 +29,7 @@ function App() {
             img={lupa}
           />
         </div>
-        <div className='fixed_width'>
+        <div className="fixed_width" id="center_tool_boxes">
           <Tool
             bordercolor={'red'}
             title={'Team Builder'}
@@ -45,7 +45,7 @@ function App() {
             img={lampada}
           />
         </div>
-        <div className='fixed_width'>
+        <div className="fixed_width" id='third_tool'>
           <Tool
             bordercolor={'darkblue'}
             title={'Calculator'}
