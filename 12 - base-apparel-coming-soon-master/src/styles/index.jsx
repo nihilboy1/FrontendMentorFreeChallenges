@@ -7,7 +7,7 @@ export const AlertIcon = styled.img`
   position: absolute;
   right: 70px;
   top: 7px;
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 820px) {
     right: 75px;
     top: 7px;
   }
@@ -24,7 +24,7 @@ export const AlertMessage = styled.p`
     props.isTrue ? 'red' : ''
   }};
 
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 820px) {
     right: 136px;
   }
 `
