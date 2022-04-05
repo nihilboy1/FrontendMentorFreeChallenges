@@ -15,7 +15,7 @@ export const ContentBox = styled.div`
       ? '0px 0px 10px 10px'
       : ''
   }};
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 780px) {
     border-radius: ${props => {
       return props.title === 'SEDANS'
         ? '10px 0px 0px 10px'

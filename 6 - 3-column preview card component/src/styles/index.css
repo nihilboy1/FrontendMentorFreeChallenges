@@ -9,9 +9,14 @@
   font-size: 15px;
   color: white;
   font-family: 'Lexend Deca', sans-serif;
+  transition: all 400ms;
 }
 
+body {
+  transition: none;
+}
 #root {
+  transition: none;
   width: 99vw;
   min-height: 99vh;
   display: flex;
@@ -63,7 +68,7 @@
 
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 780px) {
   .main_box {
     display: flex;
     border-radius: 10px;
