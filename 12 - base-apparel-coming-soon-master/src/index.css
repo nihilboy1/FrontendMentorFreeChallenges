@@ -118,6 +118,10 @@ body,
   border-color: red;
 }
 
+#input:focus{
+  outline: none;
+}
+
 #button {
   transition: all 400ms;
   background-image: linear-gradient(
@@ -127,6 +131,7 @@ body,
   );
   position: absolute;
   right: 0px;
+  top: 6px;
   width: 60px;
   padding: 9px;
   border-radius: 25px;
@@ -140,7 +145,7 @@ body,
 }
 
 #button:active {
-  padding: 12px;
+  padding: 9px;
 }
 
 @media screen and (min-width: 820px) {
