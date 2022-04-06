@@ -13,13 +13,15 @@ export const Question_p = styled.p`
 `
 
 export const Answer_p = styled.p`
-  display: ${props => {
-    return props.isTrue ? 'block' : 'none'
+  overflow: hidden;
+  display: flex;
+  height: ${props => {
+    return props.isTrue ? 'auto' : '0'
   }};
 `
 
 export const Arrow_img = styled.img`
-  transition: all 400ms;
+  transition: all 1s;
   transform: ${props => {
     return props.isTrue ? `rotate(180deg)` : ''
   }};

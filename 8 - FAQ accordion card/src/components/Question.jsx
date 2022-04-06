@@ -21,7 +21,7 @@ const Question = props => {
           alt=""
         />
       </div>
-      <Answer_p isTrue={state} className="answer nada">{props.children}</Answer_p>
+      <Answer_p isTrue={state} className="answer">{props.children}</Answer_p>
     </div>
   )
 }

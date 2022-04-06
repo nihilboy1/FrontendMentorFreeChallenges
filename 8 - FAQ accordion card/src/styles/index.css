@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-size: 15px;
   font-family: 'Kumbh Sans', sans-serif;
+  transition: all 400ms;
 }
 
 .darkcolor {
@@ -32,6 +33,7 @@
 }
 
 #root {
+  transition: none;
   padding: 130px 0px 50px 0px;
   background-image: linear-gradient(#af68ea, #7b64e8);
   width: 100vw;
