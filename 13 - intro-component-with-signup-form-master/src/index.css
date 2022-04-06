@@ -11,6 +11,27 @@
   transition: all 700ms;
 }
 
+/* TESTES */
+.success {
+  border: 1px solid hsla(154, 59%, 51%, 0.514);
+}
+
+.error {
+  border: none;
+}
+
+.error_style {
+  border: 1px solid rgba(255, 0, 0, 0.425);
+}
+
+.input_container.error img.error_alert {
+  visibility: visible;
+}
+
+.input_container.error p.error_message {
+  visibility: visible;
+}
+
 #root,
 body {
   transition: none;
@@ -20,7 +41,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ff7878;
-
 }
 
 #main_container {
@@ -88,10 +108,11 @@ body {
 }
 
 .form_item {
-  border: 1px solid rgba(128, 128, 128, 0.226);
+  outline: 1px solid rgba(0, 0, 0, 0.075);
+  caret-color: hsl(248, 32%, 49%);
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
   padding: 13px;
   text-align: left;
   font-size: 0.7rem;
@@ -99,6 +120,34 @@ body {
   color: hsl(249, 10%, 26%);
 }
 
+.input_container {
+  position: relative;
+  width: 100%;
+}
+
+.error_alert {
+  visibility: hidden;
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+
+.error_message {
+  visibility: hidden;
+  bottom: 0px;
+  right: 3px;
+  position: absolute;
+  color: #ff7979;
+  font-style: italic;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+.form_item:focus {
+  outline: 1px solid hsl(248, 32%, 49%);
+  border: none;
+}
 
 #form_box {
   border-radius: 10px;
@@ -108,7 +157,6 @@ body {
   align-items: flex-start;
   background-color: white;
   box-shadow: 0px 5px 1px #6d333360;
-
 }
 
 #claim_item {
@@ -118,6 +166,17 @@ body {
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 13px;
+}
+
+#claim_item:hover {
+  background-color: hsla(154, 59%, 51%, 0.788);
+  outline: none;
+  font-size: 13px;
 }
 
 #infos_box {
@@ -136,12 +195,11 @@ body {
   font-weight: 400;
 }
 
-
 @media screen and (min-width: 865px) {
   #main_container {
     display: flex;
     padding: 20px 110px 20px 110px;
-    background-image: url("./images/bg-intro-desktop.png");
+    background-image: url('./images/bg-intro-desktop.png');
     background-size: contain;
     background-repeat: repeat;
     background-color: #ff7878;
@@ -149,7 +207,7 @@ body {
     min-height: 620px;
   }
 
-  #right_box{
+  #right_box {
     width: 760px;
   }
 
@@ -164,7 +222,6 @@ body {
     max-width: 500px;
   }
   .form_item {
-    border: 1px solid rgba(128, 128, 128, 0.226);
     border-radius: 5px;
     width: 100%;
     margin-bottom: 15px;
@@ -217,7 +274,7 @@ body {
     color: white;
     width: 800px;
   }
-  
+
   #title {
     text-align: left;
     max-width: 450px;
@@ -226,18 +283,16 @@ body {
     font-weight: 600;
     height: auto;
     padding-right: 15px;
-
   }
-  
+
   #description {
     line-height: 20px;
     margin-top: 30px;
     height: auto;
     text-align: left;
-    max-width: 430px ;
+    max-width: 430px;
     font-weight: 500;
     font-size: 12px;
     padding-right: 15px;
-
   }
 }

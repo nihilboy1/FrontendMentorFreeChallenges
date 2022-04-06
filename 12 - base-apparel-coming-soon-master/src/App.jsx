@@ -2,10 +2,9 @@ import model_img from './images/hero-mobile.jpg'
 import logo_img from './images/logo.svg'
 import arrow from './images/icon-arrow.svg'
 import alert_icon from './images/icon-error.svg'
-import background from "./images/bg-pattern-desktop.svg"
+import background from './images/bg-pattern-desktop.svg'
 import React, { useRef, useState } from 'react'
 import { AlertIcon, AlertMessage } from './styles/index'
-
 
 function App() {
   const inputElement = useRef(null)
@@ -36,7 +35,7 @@ function App() {
 
   return (
     <div id="main_container">
-      <img id='background_desktop' src={background} alt="background" />
+      <img id="background_desktop" src={background} alt="background" />
       <div id="logo_image_box">
         <img id="image" src={logo_img} alt="logo_image" />
       </div>
@@ -67,7 +66,12 @@ function App() {
           <div onClick={emailChecker} id="button">
             <input type="submit" value="" />
             <img id="arrow" src={arrow} alt="arrow" />
-            <AlertIcon id='alert_icon' isTrue={error} src={alert_icon} alt="alert_icon" />
+            <AlertIcon
+              id="alert_icon"
+              isTrue={error}
+              src={alert_icon}
+              alt="alert_icon"
+            />
             <AlertMessage>{message}</AlertMessage>
           </div>
         </form>
