@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  transition: all 400ms;
+}
+
+#root,
+body {
+  transition: none;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7878;
+
+}
+
+#main_container {
+  padding: 65px 20px 20px 20px;
+  background-image: url('./images//bg-intro-mobile.png');
+  background-size: contain;
+  background-color: #ff7878;
+  width: 300px;
+  min-height: 760px;
+}
+
+#text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#title {
+  line-height: 28px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#description {
+  color: rgba(255, 255, 255, 0.623);
+  line-height: 20px;
+  margin-top: 20px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+#advisor_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+}
+
+.text_size {
+  font-size: 0.8rem;
+}
+
+#advisor_text_strong {
+  color: white;
+  font-weight: 600;
+}
+#advisor_box_2 {
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.596);
+  width: 70%;
+}
+
+#advisor_text {
+  margin-bottom: -25px;
+  background-color: hsl(248, 32%, 49%);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.form_item {
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 11px;
+  padding: 13px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(249, 10%, 26%);
+}
+
+
+#form_box {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+}
+
+#claim_item {
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#infos_box {
+  align-self: center;
+  width: 190px;
+}
+
+#infos_red_text {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.infos {
+  color: hsl(246, 25%, 77%);
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 860px) {
+  
+
+ 
+  #main_container {
+    display: flex;
+    padding: 20px 110px 20px 110px;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: #ff7878;
+    width: 80%;
+    min-height: 620px;
+  }
+
+  #right_box{
+    width: 760px;
+  }
+
+  #form_box {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    max-width: 500px;
+  }
+  .form_item {
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 13px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(249, 10%, 26%);
+  }
+  #advisor_text {
+    margin-bottom: -25px;
+    background-color: hsl(248, 32%, 49%);
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  #advisor_box {
+    max-width: 500px;
+    display: flex;
+    align-items: flex-end;
+    height: 130px;
+  }
+
+  #advisor_box_2 {
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.596);
+    width: 100%;
+  }
+
+  #advisor_text {
+    margin-bottom: 10px;
+    background-color: hsl(248, 32%, 49%);
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  #text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    width: 800px;
+  }
+  
+  #title {
+    text-align: left;
+    max-width: 450px;
+    line-height: 43px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    height: auto;
+    padding-right: 20px;
+
+  }
+  
+  #description {
+    line-height: 20px;
+    margin-top: 30px;
+    height: auto;
+    text-align: left;
+    max-width: 430px ;
+    font-weight: 500;
+    font-size: 12px;
+    padding-right: 20px;
+
+  }
+}
