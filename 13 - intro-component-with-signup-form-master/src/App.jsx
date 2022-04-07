@@ -35,7 +35,7 @@ const App = () => {
     const allfields = document.getElementsByClassName('form_item success')
     if (allfields.length === 4) {
       setTimeout(function () {
-        alert('Registered successfully')
+        alert('Registered Successfully')
       }, 500)
     }
   }
