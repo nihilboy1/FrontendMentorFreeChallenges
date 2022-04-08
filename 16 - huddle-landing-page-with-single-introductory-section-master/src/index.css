@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  transition: all 400ms;
+}
+
+body,
+#root {
+  background-color: #674bb0;
+  transition: none;
+  width: 98vw;
+  min-height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_container {
+  background-image: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674bb0;
+  height: 700px;
+  width: 340px;
+  padding: 20px 35px 30px 35px;
+}
+
+#logo_img {
+  width: 120px;
+}
+
+#center_box {
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+#mockup_image {
+  width: 100%;
+}
+
+#text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 230px;
+}
+
+#text_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#text_description {
+  width: 90%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+#register_button {
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.411);
+  font-size: 0.7rem;
+  color: #674bb0;
+  background-color: white;
+  width: 65%;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#register_button:hover{
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
+}
+
+#footer_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90px;
+}
+
+#social_icons_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 38%;
+  height: 40px;
+}
+
+.social_icon{
+  border: 1px solid rgba(0, 0, 0, 0.493);
+  cursor: pointer;
+  filter: invert(100%);
+  width: 25px;
+  border-radius: 15px;
+}
+
+.social_icon:hover{
+  width: 30px;
+}
+
+
+@media screen and (min-width: 850px) {
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    transition: all 400ms;
+  }
+  
+  body,
+  #root {
+    background-color: #674bb0;
+    transition: none;
+    width: 98vw;
+    min-height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #main_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #674bb0;
+    height: 700px;
+    width: 1230px;
+    padding: 40px;
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+
+  #header_box{
+    width: 100%;
+    height: 120px;
+  }
+  
+  #logo_img {
+    width: 190px;
+  }
+  
+  #center_box {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 55%;
+  }
+  
+  #mockup_image {
+    width: 100%;
+  }
+
+  #center{
+    padding-top: 35px;
+    padding-left: 42px;
+    display: flex;
+    align-items: flex-start;
+    width: 45%;
+  }
+  
+  #text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 62%;
+    width: 100%;
+  }
+  
+  #text_title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    text-align: left;
+    width: 90%;
+  }
+  
+  #text_description {
+    width: 95%;
+    line-height: 22px;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+
+  }
+  
+  #register_button {
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.411);
+    font-size: 1rem;
+    color: #674bb0;
+    background-color: white;
+    width: 37%;
+    padding: 13px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  #register_button:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
+  }
+  
+  #footer_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 48px;
+    width: 100%;
+  }
+  
+  #social_icons_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: 40px;
+  }
+  
+  .social_icon{
+    margin-left: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+    filter: invert(100%);
+    width: 35px;
+    border-radius: 50%;
+  }
+  
+  .social_icon:hover{
+    width: 40px;
+  }
+}
