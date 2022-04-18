@@ -1,0 +1,263 @@
+@use "mixins"
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  outline: none
+  box-sizing: border-box
+  border: none
+  font: 500 16px 'Epilogue', sans-serif
+  transition: .4s
+  background: hsl(0, 0%, 96%)
+  @include mixins.desktop
+
+#root
+  transition: none
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 620px
+  color: #151515
+  .main_box
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 630px
+    width: 330px
+    @include mixins.desktop
+      width: 90%
+      flex-direction: row-reverse
+      flex-wrap: wrap
+      padding: 5px 10px
+      justify-content: space-around
+    #filter
+      @include mixins.desktop
+        display: none
+      position: absolute
+      height: 100%
+      width: 100%
+      background: #000000ab
+    nav
+      right: 0px
+      padding: 15px
+      padding-left: 20px
+      background: hsl(0, 0%, 96%)
+      position: absolute
+      width: 205px
+      height: 100%
+      @include mixins.desktop
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 10%
+        width: 90%
+      #new_buttons
+        display: none
+        @include mixins.desktop
+          display: flex
+          justify-content: space-between
+          width: 180px
+          padding: 15px
+      #new_buttons button
+        color: #151515a4
+        padding: 10px
+        font-size: 0.7rem
+        cursor: pointer
+        &:hover
+          color: #151515
+          border-color: #151515
+      #register
+        border: 1px solid #151515a4
+        border-radius: 10px
+
+
+      #menu_itens_box
+        display: flex
+        flex-direction: column
+        min-height: 190px
+        gap: 15px
+        @include mixins.desktop
+          flex-direction: row
+          min-height: 50px
+      .menu_option
+        width: 60%
+        position: relative
+        display: flex
+        align-items: center
+        color: #151515a4
+        cursor: pointer
+        p
+          margin-right: 10px
+      .menu_option, .menu_option p
+        @include mixins.desktop
+          font-size: 0.8rem
+        &:hover, &:hover p
+          color: #151515
+          font-weight: 700
+      .features_company_content
+        flex-direction: column
+        @include mixins.desktop
+          border-radius: 10px
+          background-color: white
+          position: absolute
+          box-shadow: 1px 1px 2px #0000007a
+
+      #company_display
+        @include mixins.desktop
+          border-radius: 10px
+          top: 45px
+          left: 100px
+          padding: 10px
+
+      #features_display
+        @include mixins.desktop
+          top: 45px
+          left: -35px
+          padding: 10px
+
+      .item_box
+        display: flex
+        margin: 10px 0px
+        padding-left: 20px   
+        color: #151515a4
+        cursor: pointer
+        align-items: center
+        @include mixins.desktop
+          padding-left: 8px
+          margin: 7px 0px
+      .item_box, .item_box p
+        @include mixins.desktop
+          background: white 
+          font-size: 0.8rem
+        &:hover
+          text-decoration: underline  
+      img
+        width: 16px
+        margin-right: 10px
+        @include mixins.desktop
+          width: 12px
+          
+         
+            
+      #x_box
+        display: block
+        cursor: pointer
+        align-self: flex-end
+        @include mixins.desktop
+          display: none
+    header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 20px 10px
+      @include mixins.desktop
+        height: 10%
+        width: 100%
+      #snaplogo
+        width: 22%
+        @include mixins.desktop
+          width: 70px
+      #menuicon
+        cursor: pointer
+        @include mixins.desktop
+          display: none
+    #central_desktop_box
+      @include mixins.desktop
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-direction: row-reverse
+        height: 90%
+    .background_div
+      margin-top: -20px
+      height: 280px
+      @include mixins.desktop
+        margin: 0
+        display: flex
+        width: 400px
+        height: 530px
+        margin-right: 70px
+      #imgmobile
+        width: 100%
+        @include mixins.desktop
+          display: none
+      #imgdesktop
+        display: none
+        @include mixins.desktop
+          display: block
+    #content_box
+      padding: 5px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      text-align: center
+      height: 200px
+      margin-bottom: 10px
+      @include mixins.desktop
+        display: block
+        align-items: flex-start
+        width: 50%
+        height: 480px
+        padding: 70px
+        
+      h1
+        font-size: 2rem
+        font-weight: 700
+        @include mixins.desktop
+          width: 110% 
+          font-size: 4rem
+          text-align: left
+      p
+        color: #151515a4
+        font-weight: 500
+        font-size: 0.9rem
+        line-height: 22px
+        width: 95%
+        @include mixins.desktop
+          text-align: left
+          width: 90%
+          margin-top: 30px
+
+      button
+        padding: 13px 8px
+        width: 35%
+        background-color: #151515
+        color: hsl(0, 0%, 98%)
+        font-size: 0.9rem
+        border-radius: 10px
+        border: 1px solid #151515
+        cursor: pointer
+        &:hover
+          background-color: hsl(0, 0%, 96%)
+          color: #151515
+          font-weight: 700
+        @include mixins.desktop
+          padding: 12px 0px
+          width: 120px
+          margin-top: 30px
+          float: left
+    footer
+      display: flex
+      justify-content: space-around
+      align-items: center
+      margin-bottom: 20px
+      @include mixins.desktop
+        position: absolute
+        left: 105px
+        bottom: 25px
+        height: 5px
+        width: 36%
+        gap: 20px
+
+      #databizlogo
+        width: 24%
+      #audiophilelogo
+        width: 15%
+      #meetlogo
+        width: 22%
+      #makerlogo
+        width: 22%
+
