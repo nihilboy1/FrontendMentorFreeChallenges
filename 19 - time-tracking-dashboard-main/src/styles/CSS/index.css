@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  border: none;
+  font: 400 16px "Rubik", sans-serif;
+  transition: 0.4s;
+}
+
+#root, body {
+  transition: none;
+  background-color: hsl(226deg, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 98vw;
+}
+
+main {
+  padding: 60px 20px;
+  height: 1250px;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 18px 0px;
+  grid-template-areas: "." "." "." "." "." "." ".";
+}
+@media only screen and (min-width: 740px) {
+  main {
+    padding: 60px 20px;
+    height: 510px;
+    width: 880px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: ". . . ." ". . . .";
+  }
+}
+main #profile_container {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(235deg, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+main #profile_container #perfil_container {
+  border-radius: 10px;
+  background-color: hsl(246deg, 80%, 60%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65%;
+}
+@media only screen and (min-width: 740px) {
+  main #profile_container #perfil_container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    height: 75%;
+  }
+}
+main #profile_container #perfil_container #avatar_image {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+}
+main #profile_container #perfil_container .text_perfil {
+  align-self: flex-end;
+}
+main #profile_container #perfil_container #text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media only screen and (min-width: 740px) {
+  main #profile_container #perfil_container #text_box {
+    margin-bottom: 30px;
+    gap: 0px;
+  }
+}
+main #profile_container #perfil_container #text_box p {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4941176471);
+}
+main #profile_container #perfil_container #text_box h1 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+@media only screen and (min-width: 740px) {
+  main #profile_container #perfil_container #text_box h1 {
+    font-size: 1.8rem;
+  }
+}
+main #profile_container #buttons_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 32%;
+}
+@media only screen and (min-width: 740px) {
+  main #profile_container #buttons_div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+}
+main #profile_container #buttons_div button {
+  cursor: pointer;
+  background-color: hsl(235deg, 46%, 20%);
+}
+@media only screen and (min-width: 740px) {
+  main #profile_container #buttons_div button {
+    font-size: 0.9rem;
+  }
+}
+main #profile_container #buttons_div button:hover {
+  color: white;
+}
+main .container_colors {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .container_colors .background_icon {
+  width: 60px;
+  position: absolute;
+  top: -8px;
+  right: 20px;
+}
+main .container_data {
+  cursor: pointer;
+  padding: 20px;
+  background-color: hsl(235deg, 46%, 20%);
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 100%;
+  height: 80%;
+}
+@media only screen and (min-width: 740px) {
+  main .container_data {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+main .container_data:hover {
+  background-color: hsl(235deg, 44%, 51%);
+}
+main .container_data #div_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+@media only screen and (min-width: 740px) {
+  main .container_data #div_left {
+    width: 100%;
+    gap: 10px;
+  }
+}
+main .container_data #div_left h1 {
+  color: white;
+  font-weight: 500;
+}
+main .container_data #div_left p {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+@media only screen and (min-width: 740px) {
+  main .container_data #div_left p {
+    font-size: 2.7rem;
+  }
+}
+main .container_data #div_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 740px) {
+  main .container_data #div_right {
+    width: 100%;
+  }
+}
+main .container_data #div_right img {
+  width: 14%;
+  align-self: flex-end;
+  opacity: 0.5;
+}
+@media only screen and (min-width: 740px) {
+  main .container_data #div_right img {
+    position: absolute;
+    top: 22px;
+    width: 10%;
+  }
+}
+main .container_data #div_right img:hover {
+  filter: brightness(200%);
+  opacity: 2;
+}
+main .container_data #div_right p {
+  font-size: 0.8rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4941176471);
+}
+@media only screen and (min-width: 740px) {
+  main .container_data #div_right p {
+    text-align: left;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #profile_container {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #work {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #play {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #study {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #exercise {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #social {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #selfcare {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
