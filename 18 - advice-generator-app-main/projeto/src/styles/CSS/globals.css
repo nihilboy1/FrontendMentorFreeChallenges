@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font: 800 16px "Manrope", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(218deg, 23%, 16%);
+}
+
+main {
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 420px;
+  height: 340px;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    width: 320px;
+    height: 340px;
+  }
+}
+main h2 {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+main h1 {
+  color: #CEE3EA;
+  font-size: 1.6rem;
+  text-align: center;
+}
+main #dice_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  bottom: -35px;
+  border-radius: 50%;
+  background-color: hsl(150deg, 100%, 66%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+main #dice_button:hover {
+  box-shadow: 0px 0px 30px hsl(150deg, 100%, 66%);
+}
+
+/*# sourceMappingURL=globals.css.map */

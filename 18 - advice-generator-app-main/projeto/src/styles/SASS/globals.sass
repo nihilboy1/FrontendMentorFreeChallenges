@@ -1,0 +1,59 @@
+@use "variables"
+@use "mixins"
+
+*
+  box-sizing: border-box
+  border: none
+  margin: 0
+  outline: none
+  padding: 0
+  font: 800 16px variables.$project_font
+body
+  width: 100vw
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  background: variables.$dark_blue
+
+main
+  background-color: variables.$gray_blue
+  border-radius: 15px
+  padding: 20px
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-around
+  width: 420px
+  height: 340px
+  transition: .4s
+  @include mixins.mediaX
+    width: 320px
+    height: 340px
+
+
+  h2
+    color: variables.$neon_green
+    font-size: 0.9rem
+    letter-spacing: 2px
+  h1
+    color: variables.$soft_white
+    font-size: 1.6rem
+    text-align: center
+  #dice_button
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    width: 65px
+    height: 65px
+    bottom: -35px
+    border-radius: 50%
+    background-color: variables.$neon_green
+    cursor: pointer
+    transition: .4s
+
+    &:hover
+      box-shadow: 0px 0px 30px variables.$neon_green
+
