@@ -37,7 +37,9 @@ export default function Home() {
         <button id="dice_button" onClick={callAdvice}>
           <img src={dicebutton} alt="dice button" width="25px" height="25px" />
         </button>
+        <p id='disclaimer'>2 seconds required between advice requests</p>
       </main>
+      
     </>
   )
 }
