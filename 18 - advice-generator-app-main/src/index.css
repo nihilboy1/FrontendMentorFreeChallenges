@@ -8,7 +8,7 @@
   font: 800 16px "Manrope", sans-serif;
 }
 
-body {
+body, #root {
   width: 100vw;
   height: 100vh;
   display: flex;
