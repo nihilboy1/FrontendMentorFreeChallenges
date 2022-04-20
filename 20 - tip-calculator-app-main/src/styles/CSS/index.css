@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font: 700 13px "Space Mono", monospace;
+  color: hsl(186deg, 14%, 43%);
+  transition: 0.4s;
+}
+
+body, #root, html {
+  background-color: hsl(185deg, 41%, 84%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  transition: none;
+}
+
+h1 {
+  color: hsl(183deg, 100%, 15%);
+  width: 85px;
+  word-break: break-all;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 850px) {
+  h1 {
+    margin-top: -15px;
+    margin-bottom: 25px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px 20px 0px 0px;
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  min-height: 660px;
+  width: 320px;
+}
+@media only screen and (min-width: 850px) {
+  main {
+    flex-direction: row;
+    width: 860px;
+    min-height: 450px;
+    border-radius: 22px;
+  }
+}
+main #input_side_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px;
+}
+@media only screen and (min-width: 850px) {
+  main #input_side_box {
+    width: 48%;
+    padding: 20px;
+  }
+}
+main .input_box {
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: hsl(189deg, 41%, 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .input_box input {
+  width: 200px;
+  font-size: 1.5rem;
+  background-color: hsl(189deg, 41%, 95%);
+  color: hsl(183deg, 100%, 15%);
+  text-align: right;
+}
+main #select_tip_section {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: ". ." ". ." ". ." ". .";
+  min-height: 170px;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section {
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . ." ". . .";
+  }
+}
+main #select_tip_section input {
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+main #select_tip_section input:hover {
+  color: hsl(183deg, 100%, 15%);
+  background: #9FE8DF;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section input {
+    height: 42px;
+  }
+}
+main #select_tip_section #title_tip {
+  height: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #title_tip {
+    margin-top: 30px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+main #select_tip_section #perc5_tip {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #perc5_tip {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+main #select_tip_section #perc10_tip {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #perc10_tip {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+main #select_tip_section #perc15_tip {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #perc15_tip {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
+main #select_tip_section #perc25_tip {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #perc25_tip {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+}
+main #select_tip_section #perc50_tip {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #perc50_tip {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+}
+main #select_tip_section #any_perc_tip {
+  cursor: text;
+  text-align: right;
+  background-color: hsl(189deg, 41%, 95%);
+  color: hsl(186deg, 14%, 43%);
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+@media only screen and (min-width: 850px) {
+  main #select_tip_section #any_perc_tip {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main #number_o_p_section {
+    margin-bottom: -20px;
+  }
+}
+main #number_o_p_section #text_op {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+main #results_section {
+  background-color: hsl(183deg, 100%, 15%);
+  height: 200px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 850px) {
+  main #results_section {
+    padding: 35px;
+    width: 48%;
+    height: 390px;
+    gap: 0px;
+  }
+}
+main #results_section .result_tip_box {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+main #results_section .result_tip_box h2 {
+  color: hsl(0deg, 0%, 100%);
+}
+main #results_section .result_tip_box h3 {
+  font-size: 0.9rem;
+}
+main #results_section .result_tip_box p {
+  font-size: 2rem;
+  color: hsl(172deg, 67%, 45%);
+}
+@media only screen and (min-width: 850px) {
+  main #results_section .result_tip_box p {
+    font-size: 3.3rem;
+  }
+}
+main #results_section #reset_button {
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1.2rem;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  cursor: pointer;
+}
+main #results_section #reset_button:hover {
+  background: #9FE8DF;
+}
+@media only screen and (min-width: 850px) {
+  main #results_section #reset_button {
+    margin-top: 70px;
+    font-size: 1.3rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
