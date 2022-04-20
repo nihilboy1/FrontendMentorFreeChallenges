@@ -103,35 +103,44 @@ main
           color: white
   .container_colors
     position: relative
-    overflow: hidden
     border-radius: 10px
     display: flex
     justify-content: center
     align-items: flex-end
+  .image_box
+    position: absolute
+    width: 60px
+    top: 0px
+    right: 18px
+    overflow: hidden
+    width: 65px
+    height: 65px
     .background_icon
-      width: 60px
+      top: -5px
       position: absolute
-      top: -8px
-      right: 20px
+      width: 60px
+      
   .container_data
+    bottom: -2px
     cursor: pointer
     padding: 20px
     background-color: variables.$dark_blue
     position: absolute
-    overflow: hidden
     display: flex
     justify-content: space-between
     border-radius: 10px
     width: 100%
     height: 80%
+    z-index: 2
     @include mixins.desktop
       flex-direction: column
       padding: 20px
     &:hover
+      padding: 19px
       background-color: variables.$desatured_blue
 
   .container_data 
-    #div_left
+    .div_left
       width: 40%
       display: flex
       flex-direction: column
@@ -149,7 +158,7 @@ main
         font-weight: 300
         @include mixins.desktop
           font-size: 2.7rem
-    #div_right
+    .div_right
       width: 60%
       display: flex
       flex-direction: column

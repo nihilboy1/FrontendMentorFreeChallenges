@@ -132,29 +132,37 @@ main #profile_container #buttons_div button:hover {
 }
 main .container_colors {
   position: relative;
-  overflow: hidden;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-main .container_colors .background_icon {
-  width: 60px;
+main .image_box {
   position: absolute;
-  top: -8px;
-  right: 20px;
+  width: 60px;
+  top: 0px;
+  right: 18px;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+}
+main .image_box .background_icon {
+  top: -5px;
+  position: absolute;
+  width: 60px;
 }
 main .container_data {
+  bottom: -2px;
   cursor: pointer;
   padding: 20px;
   background-color: hsl(235deg, 46%, 20%);
   position: absolute;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
   width: 100%;
   height: 80%;
+  z-index: 2;
 }
 @media only screen and (min-width: 740px) {
   main .container_data {
@@ -163,9 +171,10 @@ main .container_data {
   }
 }
 main .container_data:hover {
+  padding: 19px;
   background-color: hsl(235deg, 44%, 51%);
 }
-main .container_data #div_left {
+main .container_data .div_left {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -173,59 +182,59 @@ main .container_data #div_left {
   gap: 5px;
 }
 @media only screen and (min-width: 740px) {
-  main .container_data #div_left {
+  main .container_data .div_left {
     width: 100%;
     gap: 10px;
   }
 }
-main .container_data #div_left h1 {
+main .container_data .div_left h1 {
   color: white;
   font-weight: 500;
 }
-main .container_data #div_left p {
+main .container_data .div_left p {
   color: white;
   font-size: 1.7rem;
   font-weight: 300;
 }
 @media only screen and (min-width: 740px) {
-  main .container_data #div_left p {
+  main .container_data .div_left p {
     font-size: 2.7rem;
   }
 }
-main .container_data #div_right {
+main .container_data .div_right {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 @media only screen and (min-width: 740px) {
-  main .container_data #div_right {
+  main .container_data .div_right {
     width: 100%;
   }
 }
-main .container_data #div_right img {
+main .container_data .div_right img {
   width: 14%;
   align-self: flex-end;
   opacity: 0.5;
 }
 @media only screen and (min-width: 740px) {
-  main .container_data #div_right img {
+  main .container_data .div_right img {
     position: absolute;
     top: 22px;
     width: 10%;
   }
 }
-main .container_data #div_right img:hover {
+main .container_data .div_right img:hover {
   filter: brightness(200%);
   opacity: 2;
 }
-main .container_data #div_right p {
+main .container_data .div_right p {
   font-size: 0.8rem;
   text-align: right;
   color: rgba(255, 255, 255, 0.4941176471);
 }
 @media only screen and (min-width: 740px) {
-  main .container_data #div_right p {
+  main .container_data .div_right p {
     text-align: left;
     font-size: 0.7rem;
   }
