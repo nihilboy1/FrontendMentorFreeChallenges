@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from './images/logo.svg'
 import dashboard from './images/illustration-dashboard.png'
-import face from './images/facebook_icon.png'
-import insta from './images/insta_icon.png'
-import twitter from './images/twitter_icon.png'
+import face from './images/facebook.png'
+import insta from './images/instagram.png'
+import twitter from './images/twitter.png'
 
 function App() {
   function verifyFields() {
@@ -71,9 +71,9 @@ function App() {
       </section>
       <footer id="footer_box">
         <div id="social_icons">
-          <img className="social_icon" src={face} alt="" />
-          <img className="social_icon" src={twitter} alt="" />
-          <img className="social_icon" src={insta} alt="" />
+          <img id='face' className="social_icon" src={face} alt="" />
+          <img id='twitter' className="social_icon" src={twitter} alt="" />
+          <img id='insta' className="social_icon" src={insta} alt="" />
         </div>
         <p id="copyright">&copy; Copyright Ping. All rights reserved.</p>
       </footer>
