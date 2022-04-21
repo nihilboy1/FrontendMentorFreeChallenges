@@ -108,7 +108,7 @@ main #select_tip_section input {
 }
 main #select_tip_section input:hover {
   color: hsl(183deg, 100%, 15%);
-  background: #9FE8DF;
+  background: hsl(172deg, 67%, 45%);
 }
 @media only screen and (min-width: 850px) {
   main #select_tip_section input {
@@ -278,6 +278,7 @@ main #results_section #reset_button {
 }
 main #results_section #reset_button:hover {
   background: #9FE8DF;
+  font-size: 1.4rem;
 }
 @media only screen and (min-width: 850px) {
   main #results_section #reset_button {
