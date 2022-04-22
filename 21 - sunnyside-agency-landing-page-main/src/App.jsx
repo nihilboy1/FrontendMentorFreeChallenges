@@ -144,10 +144,10 @@ function App() {
         </div>
       </section>
       <div id="grid_gallery_images">
-        <div id="milk_image" alt="milk bottles image"></div>
-        <div id="orange_on_plate" alt="orange_on_plate image"></div>
-        <div id="icecrem_cone" alt="icecrem_cone image"></div>
-        <div id="suggar_cubes" alt="suggar_cubes image"></div>
+        <div id="milk_image"></div>
+        <div id="orange_on_plate"></div>
+        <div id="icecrem_cone"></div>
+        <div id="suggar_cubes"></div>
       </div>
       <footer>
         <img
