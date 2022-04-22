@@ -16,7 +16,6 @@
   font: 700 18px variables.$font_fraunces
   border: none
   transition: .4s
-  border: 1px solid red
 
 
 body, #root, html
@@ -25,7 +24,7 @@ body, #root, html
   align-items: center
   justify-content: center
   transition: none
-  @include mixins.desktop
+  @include mixins.responsive(desktop)
     width: 99vw
 main
   display: grid
@@ -33,9 +32,9 @@ main
   grid-template-rows: 480px 670px 670px 1080px 130px 1010px 340px 310px
   gap: 0px 0px
   grid-template-areas: "."".""."".""."".""."".""."
-  @include mixins.desktop
+  @include mixins.responsive(desktop)
     grid-template-columns: 99vw
-    grid-template-rows: 750px 552px 552px 1080px 130px 1010px 340px 310px
+    grid-template-rows: 750px 565px 565px 565px 250px 485px 420px 310px
   #header_orange_div
     padding: 30px 20px
     background-image: url(../../images/mobile/image-header.jpg)
@@ -44,7 +43,7 @@ main
     flex-direction: column
     align-items: center
     position: relative
-    @include mixins.desktop
+    @include mixins.responsive(desktop)
       background-image: url(../../images/desktop/image-header.jpg)
       background-size: cover
       background-position: bottom center
@@ -61,7 +60,7 @@ main
       left: 50%
       top: 50%
       transform: translate(-50%, -50%)
-      @include mixins.desktop
+      @include mixins.responsive(desktop)
         position: sticky
         display: flex
         opacity: 1
@@ -75,7 +74,7 @@ main
         flex-direction: column
         list-style: none
         gap: 10px
-        @include mixins.desktop
+        @include mixins.responsive(desktop)
           flex-direction: row
           gap: 10px
         li
@@ -89,7 +88,7 @@ main
           height: 50px
           &:hover
             background-color: variables.$yellow
-            @include mixins.desktop
+            @include mixins.responsive(desktop)
                 background-color: #ffffff00
           a 
             padding: 12px 25px
@@ -100,14 +99,14 @@ main
             text-decoration: none
             font: 600 1rem variables.$font_barlow
             color: variables.$very_dark_grayish_blue
-            @include mixins.desktop
+            @include mixins.responsive(desktop)
               color: variables.$white
             &:hover
               text-transform: uppercase
               font-family: variables.$font_fraunces
               color: variables.$very_dark_desaturated_blue
               font-size: 0.8rem
-              @include mixins.desktop
+              @include mixins.responsive(desktop)
                 background-color: #ffffff42
                 color: variables.$white
       #pontinha
@@ -121,7 +120,7 @@ main
         top: -4%
         transform: translate(-50%, -50%)
         transform: rotate(270deg)
-        @include mixins.desktop
+        @include mixins.responsive(desktop)
           display: none
     header
       width: 100%
@@ -129,15 +128,15 @@ main
       flex-direction: row
       align-items: center
       justify-content: space-between
-      @include mixins.desktop
+      @include mixins.responsive(desktop)
         height: 60px
       #sunnyside_img
         width: 115px
-        @include mixins.desktop
+        @include mixins.responsive(desktop)
           width: 170px
       #menuicon_img
         cursor: pointer
-        @include mixins.desktop
+        @include mixins.responsive(desktop)
           opacity: 0
     h1
       font-weight: 900
@@ -146,7 +145,7 @@ main
       text-align: center
       color: variables.$white
       margin: 80px 0
-      @include mixins.desktop
+      @include mixins.responsive(desktop)
         font-size: 3rem
         letter-spacing: 10px
         margin: 100px 0
@@ -156,53 +155,66 @@ main
       position: absolute
       left: 50%
       transform: translate(-50%, -100%)
-      @include mixins.desktop
+      @include mixins.responsive(desktop)
         transform: translate(-50%, -260%)
-
+  #normal_row
+    @include mixins.responsive(desktop)
+      flex-direction: row
   .learnmore_sections
     display: flex
     flex-direction: column
-    justify-content: space-between
-    @include mixins.desktop
+    @include mixins.responsive(desktop)
       flex-direction: row-reverse
+      justify-content: center
     .solo_img_div
-      height: 285px
-      width: 100%
       background-repeat: no-repeat
       background-size: contain
-      @include mixins.desktop
-        width: 49%
-        height: 100%
+      height: 43%
     #egg_div
       background-image: url(../../images/mobile/image-transform.jpg)
+      @include mixins.responsive(desktop)
+        background-position: left
+        width: 50%
+        height: 100%
     #cup_div
       background-image: url(../../images/mobile/image-stand-out.jpg)
+      @include mixins.responsive(desktop)
+        background-position: right
+        width: 50%
+        height: 100%
     .infos_div
       height: 390px
-      padding: 25px
+      padding: 20px
       display: flex
       flex-direction: column
       align-items: center
       justify-content: space-around
-      @include mixins.desktop
-        width: 51%
+      @include mixins.responsive(desktop)
+        width: 50%
         height: 100%
         justify-content: center
         align-items: flex-start
-        padding: 160px
+        gap: 40px
+        padding-left: 130px
+      
       h2
         text-align: center
         color: variables.$very_dark_desaturated_blue
         font-size: 1.6rem
         font-weight: 900
-        @include mixins.desktop
+        @include mixins.responsive(desktop)
           font-size: 2rem
           text-align: left
+          width: 75%
       p
         color: variables.$dark_grayish_blue
         font: 600 0.9rem variables.$font_barlow
         text-align: center
         line-height: 24px
+        @include mixins.responsive(desktop)
+          text-align: left
+          line-height: 28px
+          width: 78%
       .lernmore_button
         background-color: variables.$white
         position: relative
@@ -210,83 +222,154 @@ main
         font-size: 0.8rem
         font-weight: 900
         z-index: 1
+        cursor: pointer
+        &:hover::after
+          opacity: 1
         &::after
           z-index: -1
           position: absolute
           bottom: -1px
           left: -5px
           content: ""
-          background-color: #f0eaba
+          background-color: #ffe100
           width: 115px
           height: 8px
           border-radius: 5px
+          opacity: 0.5
       #second_lernmore_button
         &::after
-          background-color: #f5caca
-  .image_infos_div
-    padding: 15px
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: flex-end
-    gap: 25px
-    color: variables.$dark_blue
-    h2
-      font-size: 1.5rem
-    p
-      margin-bottom: 40px
-      text-align: center
-      font: 600 0.8rem variables.$font_barlow
-      line-height: 23px
-  #cereja_div
-    height: 50%
-    background-image: url(../../images/mobile/image-graphic-design.jpg)
-    background-size: cover
-  #orange_div
-    background-image: url(../../images/mobile/image-photography.jpg)
-    background-size: cover
-    height: 50%
-  #client_testimonials_title_div
-    margin: auto auto
-    color: variables.$grayish_blue
-    letter-spacing: 4px
-    h2
-      font-size: 0.8rem
-  .client_testimonials_div
-    padding: 0px 20px 65px 20px
-    display: flex
-    flex-direction: column
-    align-items: center
-    gap: 30px
-    img
-      width: 65px
-      border-radius: 50%
-    blockquote
-      text-align: center
-      color: variables.$very_dark_grayish_blue
-      font: 600 0.9rem variables.$font_barlow
-      line-height: 28px
-    .person_infos_div
-      height: 50px
+          opacity: 0.5
+          background-color: #FF7163
+        &:hover::after
+          opacity: 1
+    #transform_infos
+      @include mixins.responsive(desktop)
+        padding-left: 100px
+      p
+        @include mixins.responsive(desktop)
+          width: 75%
+  .image_infos_section
+    @include mixins.responsive(desktop)
+      display: flex
+      flex-direction: row
+    .image_infos_div
+      padding: 15px
       display: flex
       flex-direction: column
-      justify-content: space-between
-    .testimonials_name
-      text-align: center
-      font-weight: 900
-      font-size: 0.9rem
-      color: variables.$very_dark_desaturated_blue
-    .testimonials_job
-      color: variables.$dark_grayish_blue
-      font: 600 0.7rem variables.$font_barlow  
+      align-items: center
+      justify-content: flex-end
+      gap: 25px
+      color: variables.$dark_desaturated_cyan
+      @include mixins.responsive(desktop)
+        width: 50%        
+      h2
+        font-size: 1.5rem
+      p
+        margin-bottom: 40px
+        text-align: center
+        font: 600 0.8rem variables.$font_barlow
+        line-height: 23px
+        @include mixins.responsive(desktop)
+          width: 48%
+    #cereja_div
+      height: 50%
+      background-image: url(../../images/mobile/image-graphic-design.jpg)
+      background-size: cover
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-graphic-design.jpg)
+        background-position: top
+        height: 100%
+    #orange_div
+      background-image: url(../../images/mobile/image-photography.jpg)
+      background-size: cover
+      height: 50%
+      color: variables.$dark_blue
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-photography.jpg)
+        background-position: top
+        height: 100%
+  #client_testimonials_title_div
+    display: flex
+    align-items: center
+    justify-content: center
+    color: variables.$grayish_blue
+    letter-spacing: 4px
+    @include mixins.responsive(desktop)
+      padding-top: 100px
+    h2
+      font-size: 0.8rem
+      @include mixins.responsive(desktop)
+        font-size: 1.1rem 
+  #client_testimonials_section
+    @include mixins.responsive(desktop)
+      display: flex
+      justify-content: center
+    .client_testimonials_div
+      padding: 0px 20px 65px 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 30px
+      @include mixins.responsive(desktop)
+        width: 360px
+        gap: 60px
+      img
+        width: 70px
+        border-radius: 50%
+      blockquote
+        text-align: center
+        color: variables.$very_dark_grayish_blue
+        font: 600 0.9rem variables.$font_barlow
+        line-height: 28px
+      .person_infos_div
+        height: 50px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      .testimonials_name
+        text-align: center
+        font-weight: 900
+        font-size: 0.9rem
+        color: variables.$very_dark_desaturated_blue
+      .testimonials_job
+        color: variables.$dark_grayish_blue
+        font: 600 0.7rem variables.$font_barlow  
   #grid_gallery_images
     display: grid
     grid-template-columns: 50% 50%
     grid-template-rows: 50% 50%
     gap: 0px 0px
     grid-template-areas: ". ."". ."
-    img
-      width: 101%
+    @include mixins.responsive(desktop)
+      display: flex
+    div
+      background-size: contain
+      background-repeat: no-repeat
+      @include mixins.responsive(desktop)
+        width: 25%
+    #milk_image
+      background-image: url(../../images/mobile/image-gallery-milkbottles.jpg)
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-gallery-milkbottles.jpg)
+        background-position: right
+    #orange_on_plate
+      background-image: url(../../images/mobile/image-gallery-orange.jpg)
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-gallery-orange.jpg)
+        background-position: right
+    #icecrem_cone
+      background-image: url(../../images/mobile/image-gallery-cone.jpg)
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-gallery-cone.jpg)
+        background-position: right
+    #suggar_cubes
+      background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg)
+      @include mixins.responsive(desktop)
+        background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg)
+        background-position: right
+
+    
+    
   footer
     padding: 35px
     background-color: #90D4C5
@@ -304,16 +387,22 @@ main
       width: 100%
       display: flex
       justify-content: space-between
+      @include mixins.responsive(desktop)
+        width: 300px
       p
         text-align: center
         font: 600 0.8rem variables.$font_barlow
-        color: #ffffffa2
-        filter: invert(23%) sepia(81%) saturate(8000%) hue-rotate(152deg) brightness(65%) contrast(88%)
+        color: variables.$dark_desaturated_cyan
         cursor: pointer
+        &:hover
+          color: variables.$white
     #socialmedia_div
       width: 60%
       display: flex
       justify-content: space-between
+      @include mixins.responsive(desktop)
+        width: 160px
       img
         cursor: pointer
-
+        &:hover
+          filter: invert(100%) sepia(77%) saturate(20%) hue-rotate(213deg) brightness(500%) contrast(102%)

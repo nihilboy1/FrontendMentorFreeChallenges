@@ -74,9 +74,9 @@ function App() {
           <button className="lernmore_button">LEARN MORE</button>
         </div>
       </section>
-      <section className="learnmore_sections">
+      <section id="normal_row" className="learnmore_sections">
         <div id="cup_div" className="solo_img_div"></div>
-        <div className="infos_div">
+        <div id="transform_infos" className="infos_div">
           <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers,
@@ -90,7 +90,7 @@ function App() {
       </section>
       <section className="image_infos_section">
         <div id="cereja_div" className="image_infos_div">
-          <h2>Graphic design</h2>
+          <h2>Graphic Design</h2>
           <p>
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients'
@@ -108,7 +108,7 @@ function App() {
       <div id="client_testimonials_title_div">
         <h2>CLIENT TESTIMONIALS</h2>
       </div>
-      <section>
+      <section id="client_testimonials_section">
         <div className="client_testimonials_div">
           <img src={emilyavatar} alt="Emily R. avatar" />
           <blockquote>
@@ -144,10 +144,10 @@ function App() {
         </div>
       </section>
       <div id="grid_gallery_images">
-        <img id="milk_image" src={milkimg} alt="milk bottles image" />
-        <img id="orange_image" src={orangeimage} alt="plate and orange image" />
-        <img id="cone_image" src={coneimage} alt="ice cream cone image" />
-        <img id="suggar_image" src={suggarimage} alt="suggar cubes image" />
+        <div id="milk_image" alt="milk bottles image"></div>
+        <div id="orange_on_plate" alt="orange_on_plate image"></div>
+        <div id="icecrem_cone" alt="icecrem_cone image"></div>
+        <div id="suggar_cubes" alt="suggar_cubes image"></div>
       </div>
       <footer>
         <img
