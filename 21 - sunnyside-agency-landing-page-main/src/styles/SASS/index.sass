@@ -1,0 +1,239 @@
+@use "variables"
+@use "mixins"
+
+@keyframes MoveUpDown 
+  0%, 100% 
+    bottom: 0
+  
+  50% 
+    bottom: 10px
+
+*
+  margin: 0
+  padding: 0
+  outline: none
+  box-sizing: border-box
+  font: 700 18px variables.$font_fraunces
+  border: none
+  transition: .4s
+
+
+body, #root, html
+  min-height: 100vh 
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: none
+main
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 480px 280px 390px 280px 390px 540px 540px 130px 310px 355px 355px 340px 310px
+  gap: 0px 0px
+  grid-template-areas: "."".""."".""."".""."".""."".""."".""."
+  width: 340px
+  #header_orange_div
+    padding: 30px 20px
+    background-image: url(../../images/mobile/image-header.jpg)
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    nav
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background-color: white
+      position: absolute
+      height: 280px
+      width: 298px
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      ul
+        display: flex
+        flex-direction: column
+        list-style: none
+        gap: 10px
+        li
+          text-align: center
+          font: 600 1rem variables.$font_barlow
+          color: variables.$dark_grayish_blue
+          padding: 15px 25px
+          border-radius: 50px
+          cursor: pointer
+          &:hover
+            background-color: variables.$yellow
+            font-family: variables.$font_fraunces
+            color: variables.$very_dark_desaturated_blue
+      #pontinha
+        width: 0
+        height: 0
+        border: 25px solid transparent
+        border-top: 0
+        border-bottom: 25px solid white
+        position: absolute
+        left: 260px
+        top: -4%
+        transform: translate(-50%, -50%)
+        transform: rotate(270deg)
+
+    header
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      #sunnyside_img
+        width: 115px   
+      #menuicon_img
+        cursor: pointer
+          
+    h1
+      font-weight: 900
+      font-size: 2rem
+      letter-spacing: 5px
+      text-align: center
+      color: variables.$white
+      margin: 80px 0
+    #arrow_down
+      width: 35px
+      animation: MoveUpDown 2s linear infinite
+      position: absolute
+      left: 50%
+      transform: translate(-50%, -100%)
+  #egg_div
+    background-image: url(../../images/mobile/image-transform.jpg)
+    background-size: cover
+  #cup_div
+    background-image: url(../../images/mobile/image-stand-out.jpg)
+    background-size: cover
+  .infos_div
+    padding: 25px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    h2
+      text-align: center
+      color: variables.$very_dark_desaturated_blue
+      font-size: 1.6rem
+      font-weight: 900
+    p
+      color: variables.$dark_grayish_blue
+      font: 600 0.9rem variables.$font_barlow
+      text-align: center
+      line-height: 24px
+    .lernmore_button
+      background-color: variables.$white
+      position: relative
+      color: variables.$very_dark_desaturated_blue
+      font-size: 0.8rem
+      font-weight: 900
+      z-index: 1
+      &::after
+        z-index: -1
+        position: absolute
+        bottom: -1px
+        left: -5px
+        content: ""
+        background-color: #f0eaba
+        width: 115px
+        height: 8px
+        border-radius: 5px
+    #second_lernmore_button
+      &::after
+        background-color: #f5caca
+  .image_infos_div
+    padding: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    gap: 25px
+    color: variables.$dark_blue
+    h2
+      font-size: 1.5rem
+    p
+      margin-bottom: 40px
+      text-align: center
+      font: 600 0.8rem variables.$font_barlow
+      line-height: 23px
+  #cereja_div
+    background-image: url(../../images/mobile/image-graphic-design.jpg)
+    background-size: cover
+  #orange_div
+    background-image: url(../../images/mobile/image-photography.jpg)
+    background-size: cover
+  #client_testimonials_title_div
+    margin: auto auto
+    color: variables.$grayish_blue
+    letter-spacing: 4px
+    h2
+      font-size: 0.8rem
+  .client_testimonials_div
+    padding: 0px 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    img
+      width: 65px
+      border-radius: 50%
+    blockquote
+      text-align: center
+      color: variables.$very_dark_grayish_blue
+      font: 600 0.9rem variables.$font_barlow
+      line-height: 28px
+    .person_infos_div
+      height: 50px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .testimonials_name
+      text-align: center
+      font-weight: 900
+      font-size: 0.9rem
+      color: variables.$very_dark_desaturated_blue
+    .testimonials_job
+      color: variables.$dark_grayish_blue
+      font: 600 0.7rem variables.$font_barlow  
+  #grid_gallery_images
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 50% 50%
+    gap: 0px 0px
+    grid-template-areas: ". ."". ."
+    img
+      width: 101%
+  footer
+    padding: 35px
+    background-color: #90D4C5
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 40px
+    #logosunnyside_footer
+     filter: invert(23%) sepia(81%) saturate(8000%) hue-rotate(152deg) brightness(65%) contrast(88%)
+     width: 160px
+     cursor: pointer
+    #links_div
+      margin-bottom: 35px
+      width: 100%
+      display: flex
+      justify-content: space-between
+      p
+        text-align: center
+        font: 600 0.8rem variables.$font_barlow
+        color: #ffffffa2
+        filter: invert(23%) sepia(81%) saturate(8000%) hue-rotate(152deg) brightness(65%) contrast(88%)
+        cursor: pointer
+    #socialmedia_div
+      width: 60%
+      display: flex
+      justify-content: space-between
+      img
+        cursor: pointer
+

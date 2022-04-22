@@ -100,20 +100,30 @@ body,
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 38%;
+  width: 120px;
   height: 40px;
 }
 
 .social_icon{
-  border: 1px solid rgba(0, 0, 0, 0.493);
   cursor: pointer;
-  filter: invert(100%);
   width: 25px;
+}
+
+#face {
+  width: 26px;
   border-radius: 15px;
 }
 
+#insta {
+  border-radius: 8px;
+}
+
+#twitter {
+  border-radius: 3px;
+}
+
 .social_icon:hover{
-  width: 30px;
+  background-color:hsl(300, 69%, 71%) ;
 }
 
 
@@ -147,10 +157,10 @@ body,
     flex-wrap: wrap;
     background-image: url("./images/bg-desktop.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #674bb0;
-    height: 700px;
-    width: 1230px;
+    height: 100%;
+    width: 100%;
     padding: 40px;
     padding-left: 60px;
     padding-right: 50px;
@@ -167,6 +177,7 @@ body,
   
   #center_box {
     display: flex;
+    align-items: flex-start;
     align-items: center;
     height: auto;
     width: 55%;
@@ -188,8 +199,7 @@ body,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    height: 62%;
+    height: 60%;
     width: 100%;
   }
   
@@ -237,25 +247,36 @@ body,
     height: 48px;
     width: 100%;
   }
-  
   #social_icons_box {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: auto;
+    justify-content: space-around;
+    width: 120px;
     height: 40px;
   }
   
   .social_icon{
-    margin-left: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.493);
     cursor: pointer;
-    filter: invert(100%);
-    width: 35px;
-    border-radius: 50%;
+    width: 28px;
+  }
+  
+  #face {
+    border-radius: 15px;
+    width: 28px;
+  }
+  
+  #insta {
+    border-radius: 8px;
+  }
+  
+  #twitter {
+    border-radius: 3px;
   }
   
   .social_icon:hover{
-    width: 40px;
+    background-color:hsl(300, 69%, 71%) ;
   }
+  
+
+  
 }

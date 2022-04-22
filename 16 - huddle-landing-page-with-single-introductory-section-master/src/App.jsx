@@ -27,9 +27,9 @@ function App() {
       </div>
       <footer id="footer_box">
         <div id="social_icons_box">
-          <img className="social_icon" src={face} alt="facebook_icon" />
-          <img className="social_icon" src={twi} alt="twitter_icon" />
-          <img className="social_icon" src={insta} alt="insta_icon" />
+          <img id='face' className="social_icon" src={face} alt="facebook_icon" />
+          <img id='twitter' className="social_icon" src={twi} alt="twitter_icon" />
+          <img id='insta' className="social_icon" src={insta} alt="insta_icon" />
         </div>
       </footer>
     </main>
