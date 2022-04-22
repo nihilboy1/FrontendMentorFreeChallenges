@@ -41,91 +41,108 @@ function App() {
             src={menuicon}
             alt="Menu Icon"
           />
+          <MenuBox active={active} id="menu">
+            <div id="pontinha"></div>
+            <ul id="menu_content">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="">Services</a>
+              </li>
+              <li>
+                <a href="">Projects</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </MenuBox>
         </header>
         <h1>WE ARE CREATIVES</h1>
         <img id="arrow_down" src={arrow_down} alt="arrow down" />
-        <MenuBox active={active} id="menu">
-          <div id="pontinha"></div>
-          <ul id="menu_content">
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </MenuBox>
       </div>
-      <div id="egg_div" className="solo_img_div"></div>
-      <div className="infos_div">
-        <h2>Transform your brand</h2>
-        <p>
-          We are a full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
-        </p>
-        <button className="lernmore_button">LEARN MORE</button>
-      </div>
-      <div id="cup_div" className="solo_img_div"></div>
-      <div className="infos_div">
-        <h2>Stand out to the right audience</h2>
-        <p>
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we'll build and extend
-          your brand in digital places.
-        </p>
-        <button id="second_lernmore_button" className="lernmore_button">
-          LEARN MORE
-        </button>
-      </div>
-      <div id="cereja_div" className="image_infos_div">
-        <h2>Graphic design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients' attention.
-        </p>
-      </div>
-      <div id="orange_div" className="image_infos_div">
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
-      </div>
+      <section className="learnmore_sections">
+        <div id="egg_div" className="solo_img_div"></div>
+        <div className="infos_div">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <button className="lernmore_button">LEARN MORE</button>
+        </div>
+      </section>
+      <section className="learnmore_sections">
+        <div id="cup_div" className="solo_img_div"></div>
+        <div className="infos_div">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <button id="second_lernmore_button" className="lernmore_button">
+            LEARN MORE
+          </button>
+        </div>
+      </section>
+      <section className="image_infos_section">
+        <div id="cereja_div" className="image_infos_div">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients'
+            attention.
+          </p>
+        </div>
+        <div id="orange_div" className="image_infos_div">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
       <div id="client_testimonials_title_div">
         <h2>CLIENT TESTIMONIALS</h2>
       </div>
-      <div className="client_testimonials_div">
-        <img src={emilyavatar} alt="Emily R. avatar" />
-        <blockquote>
-          We put our trust in Sunnyside and they delivered, making sure our
-          needs were met and deadlines were always hit.
-        </blockquote>
-        <div className="person_infos_div">
-          <p className="testimonials_name">Emily R.</p>
-          <p className="testimonials_job">Marketing Director</p>
+      <section>
+        <div className="client_testimonials_div">
+          <img src={emilyavatar} alt="Emily R. avatar" />
+          <blockquote>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </blockquote>
+          <div className="person_infos_div">
+            <p className="testimonials_name">Emily R.</p>
+            <p className="testimonials_job">Marketing Director</p>
+          </div>
         </div>
-      </div>
-      <div className="client_testimonials_div">
-        <img src={thomasavatar} alt="Thomas S. avatar" />
-        <blockquote>
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-          success made it a satisfying and enjoyable experience.
-        </blockquote>
-        <div className="person_infos_div">
-          <p className="testimonials_name">Thomas S.</p>
-          <p className="testimonials_job">Chief Operating Officer</p>
+        <div className="client_testimonials_div">
+          <img src={thomasavatar} alt="Thomas S. avatar" />
+          <blockquote>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </blockquote>
+          <div className="person_infos_div">
+            <p className="testimonials_name">Thomas S.</p>
+            <p className="testimonials_job">Chief Operating Officer</p>
+          </div>
         </div>
-      </div>
-      <div className="client_testimonials_div">
-        <img src={jennieavatar} alt="Jennie F. avatar" />
-        <blockquote>
-          Incredible end result! Our sales increased over 400% when we worked
-          with Sunnyside. Highly recommended!
-        </blockquote>
-        <div className="person_infos_div">
-          <p className="testimonials_name">Jennie F.</p>
-          <p className="testimonials_job">Business Owner</p>
+        <div className="client_testimonials_div">
+          <img src={jennieavatar} alt="Jennie F. avatar" />
+          <blockquote>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </blockquote>
+          <div className="person_infos_div">
+            <p className="testimonials_name">Jennie F.</p>
+            <p className="testimonials_job">Business Owner</p>
+          </div>
         </div>
-      </div>
+      </section>
       <div id="grid_gallery_images">
         <img id="milk_image" src={milkimg} alt="milk bottles image" />
         <img id="orange_image" src={orangeimage} alt="plate and orange image" />

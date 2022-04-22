@@ -16,6 +16,7 @@
   font: 700 18px "Fraunces", serif;
   border: none;
   transition: 0.4s;
+  border: 1px solid red;
 }
 
 body, #root, html {
@@ -25,14 +26,24 @@ body, #root, html {
   justify-content: center;
   transition: none;
 }
+@media screen and (min-width: 670px) {
+  body, #root, html {
+    width: 99vw;
+  }
+}
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 480px 280px 390px 280px 390px 540px 540px 130px 310px 355px 355px 340px 310px;
+  grid-template-columns: 340px;
+  grid-template-rows: 480px 670px 670px 1080px 130px 1010px 340px 310px;
   gap: 0px 0px;
-  grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." "." ".";
-  width: 340px;
+  grid-template-areas: "." "." "." "." "." "." "." "." ".";
+}
+@media screen and (min-width: 670px) {
+  main {
+    grid-template-columns: 99vw;
+    grid-template-rows: 750px 552px 552px 1080px 130px 1010px 340px 310px;
+  }
 }
 main #header_orange_div {
   padding: 30px 20px;
@@ -42,6 +53,14 @@ main #header_orange_div {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+@media screen and (min-width: 670px) {
+  main #header_orange_div {
+    background-image: url(../../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding: 25px 35px;
+  }
 }
 main #header_orange_div nav {
   display: flex;
@@ -56,24 +75,74 @@ main #header_orange_div nav {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav {
+    position: sticky;
+    display: flex;
+    opacity: 1;
+    z-index: 1;
+    width: 550px;
+    height: 80px;
+    transform: translate(5%);
+    background-color: #3EBFFF;
+  }
+}
 main #header_orange_div nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 10px;
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
 main #header_orange_div nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font: 600 1rem "Barlow", sans-serif;
-  color: hsl(232deg, 10%, 55%);
-  padding: 15px 25px;
   border-radius: 50px;
   cursor: pointer;
+  width: 105px;
+  height: 50px;
 }
 main #header_orange_div nav ul li:hover {
   background-color: hsl(51deg, 100%, 49%);
+}
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+main #header_orange_div nav ul li a {
+  padding: 12px 25px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 50px;
+  display: block;
+  text-decoration: none;
+  font: 600 1rem "Barlow", sans-serif;
+  color: hsl(213deg, 9%, 39%);
+}
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav ul li a {
+    color: hsl(0deg, 0%, 100%);
+  }
+}
+main #header_orange_div nav ul li a:hover {
+  text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2588235294);
+    color: hsl(0deg, 0%, 100%);
+  }
 }
 main #header_orange_div nav #pontinha {
   width: 0;
@@ -87,6 +156,11 @@ main #header_orange_div nav #pontinha {
   transform: translate(-50%, -50%);
   transform: rotate(270deg);
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div nav #pontinha {
+    display: none;
+  }
+}
 main #header_orange_div header {
   width: 100%;
   display: flex;
@@ -94,11 +168,26 @@ main #header_orange_div header {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div header {
+    height: 60px;
+  }
+}
 main #header_orange_div header #sunnyside_img {
   width: 115px;
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div header #sunnyside_img {
+    width: 170px;
+  }
+}
 main #header_orange_div header #menuicon_img {
   cursor: pointer;
+}
+@media screen and (min-width: 670px) {
+  main #header_orange_div header #menuicon_img {
+    opacity: 0;
+  }
 }
 main #header_orange_div h1 {
   font-weight: 900;
@@ -108,6 +197,13 @@ main #header_orange_div h1 {
   color: hsl(0deg, 0%, 100%);
   margin: 80px 0;
 }
+@media screen and (min-width: 670px) {
+  main #header_orange_div h1 {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin: 100px 0;
+  }
+}
 main #header_orange_div #arrow_down {
   width: 35px;
   animation: MoveUpDown 2s linear infinite;
@@ -115,34 +211,75 @@ main #header_orange_div #arrow_down {
   left: 50%;
   transform: translate(-50%, -100%);
 }
-main #egg_div {
+@media screen and (min-width: 670px) {
+  main #header_orange_div #arrow_down {
+    transform: translate(-50%, -260%);
+  }
+}
+main .learnmore_sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 670px) {
+  main .learnmore_sections {
+    flex-direction: row-reverse;
+  }
+}
+main .learnmore_sections .solo_img_div {
+  height: 285px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 670px) {
+  main .learnmore_sections .solo_img_div {
+    width: 49%;
+    height: 100%;
+  }
+}
+main .learnmore_sections #egg_div {
   background-image: url(../../images/mobile/image-transform.jpg);
-  background-size: cover;
 }
-main #cup_div {
+main .learnmore_sections #cup_div {
   background-image: url(../../images/mobile/image-stand-out.jpg);
-  background-size: cover;
 }
-main .infos_div {
+main .learnmore_sections .infos_div {
+  height: 390px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-main .infos_div h2 {
+@media screen and (min-width: 670px) {
+  main .learnmore_sections .infos_div {
+    width: 51%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 160px;
+  }
+}
+main .learnmore_sections .infos_div h2 {
   text-align: center;
   color: hsl(212deg, 27%, 19%);
   font-size: 1.6rem;
   font-weight: 900;
 }
-main .infos_div p {
+@media screen and (min-width: 670px) {
+  main .learnmore_sections .infos_div h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+main .learnmore_sections .infos_div p {
   color: hsl(232deg, 10%, 55%);
   font: 600 0.9rem "Barlow", sans-serif;
   text-align: center;
   line-height: 24px;
 }
-main .infos_div .lernmore_button {
+main .learnmore_sections .infos_div .lernmore_button {
   background-color: hsl(0deg, 0%, 100%);
   position: relative;
   color: hsl(212deg, 27%, 19%);
@@ -150,7 +287,7 @@ main .infos_div .lernmore_button {
   font-weight: 900;
   z-index: 1;
 }
-main .infos_div .lernmore_button::after {
+main .learnmore_sections .infos_div .lernmore_button::after {
   z-index: -1;
   position: absolute;
   bottom: -1px;
@@ -161,7 +298,7 @@ main .infos_div .lernmore_button::after {
   height: 8px;
   border-radius: 5px;
 }
-main .infos_div #second_lernmore_button::after {
+main .learnmore_sections .infos_div #second_lernmore_button::after {
   background-color: #f5caca;
 }
 main .image_infos_div {
@@ -183,12 +320,14 @@ main .image_infos_div p {
   line-height: 23px;
 }
 main #cereja_div {
+  height: 50%;
   background-image: url(../../images/mobile/image-graphic-design.jpg);
   background-size: cover;
 }
 main #orange_div {
   background-image: url(../../images/mobile/image-photography.jpg);
   background-size: cover;
+  height: 50%;
 }
 main #client_testimonials_title_div {
   margin: auto auto;
@@ -199,7 +338,7 @@ main #client_testimonials_title_div h2 {
   font-size: 0.8rem;
 }
 main .client_testimonials_div {
-  padding: 0px 20px;
+  padding: 0px 20px 65px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -4,6 +4,9 @@ export const MenuBox = styled.nav`
   opacity: ${props => {
     return props.active ? '1' : '0'
   }};
+  z-index: ${props => {
+    return props.active ? '1' : '-1'
+  }};
 `
 
 export const MenuIcon = styled.img`
