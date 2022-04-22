@@ -105,9 +105,9 @@ function App() {
           </p>
         </div>
       </section>
-      <div id="client_testimonials_title_div">
-        <h2>CLIENT TESTIMONIALS</h2>
-      </div>
+      <h2 id="client_testimonials_title">
+        <p>CLIENT TESTIMONIALS</p>
+      </h2>
       <section id="client_testimonials_section">
         <div className="client_testimonials_div">
           <img src={emilyavatar} alt="Emily R. avatar" />

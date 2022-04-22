@@ -399,7 +399,7 @@ main .image_infos_section #orange_div {
     height: 100%;
   }
 }
-main #client_testimonials_title_div {
+main #client_testimonials_title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,15 +407,15 @@ main #client_testimonials_title_div {
   letter-spacing: 4px;
 }
 @media screen and (min-width: 705px) {
-  main #client_testimonials_title_div {
+  main #client_testimonials_title {
     padding-top: 100px;
   }
 }
-main #client_testimonials_title_div h2 {
+main #client_testimonials_title p {
   font-size: 0.8rem;
 }
 @media screen and (min-width: 705px) {
-  main #client_testimonials_title_div h2 {
+  main #client_testimonials_title p {
     font-size: 1.1rem;
   }
 }
