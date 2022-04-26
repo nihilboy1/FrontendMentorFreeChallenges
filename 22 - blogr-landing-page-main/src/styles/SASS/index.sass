@@ -1,0 +1,470 @@
+@use "variables"
+@use "mixins"
+*
+  border: none
+  margin: 0
+  padding: 0
+  outline: 0
+  box-sizing: border-box
+  font: 300 16px variables.$font_overpass
+  list-style: none
+  transition: .4s
+body, #root, html
+  width: 100%
+  min-height: 99vh
+  display: flex
+  justify-content: center 
+  transition: none
+main
+  display: grid 
+  grid-template-columns: 340px 
+  grid-template-rows: 540px 160px 1160px 560px 1030px 820px
+  gap: 0px 0px
+  grid-template-areas: ".""."".""."".""."
+  @include mixins.desktop
+    width: 100%
+    justify-content: center
+    grid-template-columns: 100%
+    grid-template-rows: 560px 245px 700px 375px 945px 330px
+  #header_section
+    padding: 30px
+    position: relative
+    height: 100%
+    border-bottom-left-radius: 90px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    @include mixins.desktop
+      align-items: center
+    header
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 15px
+      width: 108%
+      align-self: center
+      @include mixins.desktop
+        width: 80%
+        margin-top: 30px
+        position: relative
+      #menu
+        overflow: hidden
+        background-color: white
+        top: 110px
+        left: 18px
+        width: 300px
+        height: 410px
+        border-bottom-left-radius: 90px
+        position: absolute
+        padding: 55px 10px 10px 10px
+        flex-direction: column
+        justify-content: space-between
+        font-family: variables.$font_ubuntu
+        box-shadow: 1px 3px 10px variables.$verydarkblackblue
+        @include mixins.desktop
+          overflow: visible
+          border-radius: 0
+          flex-direction: row
+          display: flex
+          background-color: variables.$transparent
+          width: 85%
+          height: 50px
+          padding: 0
+          top: -5px
+          left: 150px
+          box-shadow: none
+        #menu_options_box
+          @include mixins.desktop
+            width: 300px
+            display: flex
+            flex-direction: row
+        #menu_access_box
+          flex-direction: row
+          justify-content: center
+          @include mixins.desktop
+            width: 240px
+            padding-left: 5px
+           
+        ul
+          display: flex
+          flex-direction: column
+          align-items: center
+          gap: 12px
+          .login_option
+            padding: 10px 15px
+            border-radius: 20px
+            font-family: variables.$font_ubuntu
+            margin-bottom: 25px
+            cursor: pointer
+            @include mixins.desktop
+              margin-bottom: 0
+              padding: 12px 30px
+          #login
+            font-weight: 600
+            border: 1px solid variables.$verydarkblackblue
+            background-color: variables.$verydarkblackblue
+            color: variables.$white
+            @include mixins.desktop
+              background-color: variables.$transparent
+              border: none
+            &:hover
+              color: variables.$verydarkblackblue
+              background-color: variables.$white
+              @include mixins.desktop
+                color: variables.$white
+                background-color: variables.$lightwhite
+                
+          #sign_in
+            background: linear-gradient(130deg, rgba(255,143,112,1) 5%, rgba(255,61,84,1) 58%)
+            color: variables.$white
+            @include mixins.desktop
+              background: variables.$transparent
+              border: none
+              font-weight: 600
+            &:hover
+              background-color: variables.$lightwhite
+          .menu_option
+            width: 60%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            cursor: pointer
+            margin-bottom: 10px
+            @include mixins.desktop
+              justify-content: flex-start 
+              width: 100%
+              margin-bottom: 0px
+            img
+              filter: invert(54%) sepia(66%) saturate(6932%) hue-rotate(333deg) brightness(99%) contrast(84%)
+              @include mixins.desktop
+                filter: none
+            p
+              font-weight: 600
+              color: variables.$verydarkblackblue
+              font-family: variables.$font_ubuntu
+              @include mixins.desktop
+                font-size: 0.9rem
+                color: variables.$white
+                margin-right: 8px
+                &:hover
+                  text-decoration: underline
+          .inter_menu_list
+            background-color: variables.$grayishblue
+            color: variables.$verydarkblackblue
+            border-radius: 5px
+            display: flex
+            align-items: center
+            flex-direction: column
+            gap: 10px
+            cursor: pointer
+            width: 100%
+            text-align: center
+            font-family: variables.$font_ubuntu
+            @include mixins.desktop
+              position: absolute
+              top: 40px
+              width: 180%
+              background-color: variables.$white
+              gap: 20px
+            li
+              font-family: variables.$font_ubuntu
+              @include mixins.desktop
+                width: 100%
+                text-align: left
+                font-size: 0.9rem
+              &:hover
+                text-decoration: underline
+                @include mixins.desktop
+                  font-weight: 600
+                  text-decoration: none
+          #product_options
+            @include mixins.desktop
+              left: -10px
+          #company_options
+            @include mixins.desktop
+              left: -10px
+          #connect_options
+            @include mixins.desktop
+              left: -10px
+
+      #blogr_logo
+        width: 80px
+        @include mixins.desktop
+          width: 100px
+      #open_menu
+        background-size: contain
+        background-position: left
+        background-repeat: no-repeat
+        width: 30px
+        height: 100%
+        cursor: pointer
+        @include mixins.desktop
+          display: none
+    #header_content
+      margin-top: 90px
+      display: flex
+      flex-direction: column
+      gap: 15px
+      @include mixins.desktop
+        margin-top: 120px
+      h1
+        text-align: center
+        color: variables.$white
+        font-size: 1.9rem
+        font-weight: 600
+        @include mixins.desktop
+          font-size: 3.4rem
+      p
+        text-align: center
+        color: variables.$white
+        margin-bottom: 30px
+        @include mixins.desktop
+          font-size: 1.2rem
+          margin-bottom: 20px
+      #header_buttons
+        display: flex
+        align-items: center
+        justify-content: space-around
+        @include mixins.desktop
+          justify-content: center
+          gap: 30px
+        button
+          padding: 13px 20px
+          border-radius: 40px
+          font: 600 0.9rem variables.$font_ubuntu
+          border: 1px solid variables.$white
+          cursor: pointer
+        #start
+          color: variables.$white
+          background-color: variables.$transparent
+          border: 1px solid variables.$transparent
+          &:hover
+            background-color: variables.$lightwhite
+            color: variables.$white
+            border: 1px solid variables.$white
+        #learn
+          color: variables.$white
+          background-color: variables.$transparent
+          &:hover
+            background-color: variables.$white
+            color: variables.$verylightred
+    &::after
+      background: rgb(255,143,112)
+      background: linear-gradient(130deg, rgba(255,143,112,1) 22%, rgba(255,61,84,1) 58%)
+      content: url("../../images/bg-pattern-intro-mobile.svg")
+      position: absolute
+      top: 70%
+      left: 88%
+      transform: translate(-50%,-50%) scale(0.9) rotate(0deg)
+      z-index: -1
+      @include mixins.desktop
+        content: url("../../images/bg-pattern-intro-desktop.svg")
+        background: linear-gradient(130deg, rgba(255,143,112,1) 30%, rgba(255,61,84,1) 58%)
+        top: 39%
+        left: 79%
+  #title_section
+    display: flex
+    align-items: center
+    justify-content: center
+    color: variables.$verydarkblue
+    h1
+      font-size: 1.4rem
+      font-weight: 600
+      margin-bottom: -50px
+      @include mixins.desktop
+        margin-bottom: -100px
+        font-size: 2.2rem
+        z-index: -10
+  #first_content_section
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include mixins.desktop
+      overflow: clip visible
+      position: relative
+      display: block
+      padding-left: 11%
+      padding-top: 5px
+    #first_content_image
+      background-image: url("../../images/illustration-editor-mobile.svg")
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top
+      width: 100%
+      height: 320px
+      @include mixins.desktop
+        position: absolute
+        background-image: url("../../images/illustration-editor-desktop.svg")
+        background-position: left
+        right: -210px
+        top: -170px
+        width: 61%
+        height: 117%
+        z-index: -5
+  #second_section
+    position: relative
+    #blog_cellphone
+      background-image: url("../../images/illustration-phones.svg")
+      background-size: contain
+      background-repeat: no-repeat
+      height: 350px
+      width: 100%
+      position: absolute
+      top: -25%
+      z-index: 1
+      @include mixins.desktop
+        top: -70px
+        left: 8%
+        width: 40%
+        height: 148%
+        background-position: left
+    #second_content_section
+      border-bottom-left-radius: 90px
+      border-top-right-radius: 90px
+      position: relative
+      height: 100%
+      overflow: hidden
+      display: flex
+      flex-direction: column
+      align-items: center
+      background: #34344C
+      z-index: -1
+      @include mixins.desktop
+        align-items: center
+        justify-content: center
+        padding-left: 41%
+      &::after
+        content: url("../../images/bg-pattern-circles.svg")
+        transform: translate(-50%,-50%) scale(54%) rotate(0deg)
+        position: absolute
+        top: 10%
+        left: 50%
+        z-index: -1
+        @include mixins.desktop
+          top: 0%
+          left: 280px
+          transform: translate(-50%,-50%) scale(95%) rotate(0deg)
+      h1
+        color: variables.$white
+        font-size: 2.1rem
+        text-align: center
+        font-weight: 600
+        margin-top: 200px
+        margin-bottom: 20px
+        @include mixins.desktop
+          margin-top: 0
+          width: 62%
+          text-align: left
+      p
+        width: 88%
+        text-align: center
+        line-height: 24px
+        color: variables.$white
+        @include mixins.desktop
+          width: 62%
+          text-align: left
+          line-height: 25px
+  #third_content_section
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include mixins.desktop
+      overflow: clip visible
+      position: relative
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      padding-left: 50%
+      padding-top: 5px
+    #third_content_image
+      margin-top: 55px
+      background-image: url("../../images/illustration-laptop-mobile.svg")
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top
+      width: 100%
+      height: 330px
+      @include mixins.desktop
+        position: absolute
+        background-image: url("../../images/illustration-laptop-desktop.svg")
+        background-position: right
+        width: 65%
+        height: 80%
+        left: -220px
+        top: 50px
+        z-index: -2     
+  #footer_sections
+    background-color: variables.$verydarkblackblue
+    border-top-right-radius: 90px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include mixins.desktop
+      flex-direction: row
+      align-items: flex-start
+      gap: 16%
+      padding: 5%  10%
+    #logo_footer
+      width: 95px
+      margin-top: 55px
+      margin-bottom: 70px
+      @include mixins.desktop
+        margin: 0
+    ul
+      width: 30%
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 30px
+      @include mixins.desktop
+        width: 100px
+        align-items: flex-start
+      li
+        color: #ffffff70
+        margin-bottom: 15px
+        cursor: pointer
+        font-family: variables.$font_ubuntu
+        &:hover
+          text-decoration: underline
+      h2
+        color: variables.$white
+        margin-bottom: 30px
+        font-weight: 600
+        font-family: variables.$font_ubuntu
+.h2_content
+  color: variables.$verydarkblue
+  font-weight: 600
+  font-size: 1.5rem
+  width: 70%
+  text-align: center
+  margin-top: 45px
+  margin-bottom: 25px
+  @include mixins.desktop
+    width:400px
+    font-size: 1.6rem
+    text-align: left
+.p_content
+  text-align: center
+  width: 78%
+  line-height: 25px
+  font-size: 0.9rem
+  color: variables.$verydarkgrayishblue
+  @include mixins.desktop
+    width: 40%
+    text-align: left
+    font-size: 15px
+.p_third
+  @include mixins.desktop
+    width: 70%
+.relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 65%
+  position: relative
+
+
+
+
+
