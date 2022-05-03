@@ -98,6 +98,7 @@ main #first_modal #modal_header h2 {
 }
 main #first_modal .modal_stand_box {
   padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1921568627);
   border-radius: 10px;
   margin-top: 30px;
 }
@@ -149,7 +150,7 @@ main #first_modal .modal_stand_box .insertvalue_div h2 {
   color: hsl(0deg, 0%, 48%);
   font-size: 0.9rem;
 }
-main #first_modal .modal_stand_box .insertvalue_div .intern_insertvalue_div {
+main #first_modal .modal_stand_box .insertvalue_div .intern_inservalue_div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -182,7 +183,6 @@ main #first_modal .modal_stand_box .insertvalue_div button {
   font-weight: 600;
   font-size: 0.9rem;
   background-color: hsl(176deg, 50%, 47%);
-  cursor: pointer;
 }
 main header {
   padding: 25px 24px;

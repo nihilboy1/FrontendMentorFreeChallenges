@@ -7,6 +7,7 @@ type Props = {
   left: number
   available: string
   openCloseFirstModal: any
+  option: number
 }
 export const Stand = ({
   title,
@@ -14,7 +15,8 @@ export const Stand = ({
   min_pledge,
   left,
   available,
-  openCloseFirstModal
+  openCloseFirstModal,
+  option
 }: Props) => {
   return (
     <S.StandDiv left={left} className="stand_box">
@@ -25,7 +27,7 @@ export const Stand = ({
         <span>{left}</span>
         <p>left</p>
       </div>
-      <button onClick={left ? openCloseFirstModal : ''}>{available}</button>
+      <button value={option} onClick={left ? openCloseFirstModal : ''}>{available}</button>
     </S.StandDiv>
   )
 }

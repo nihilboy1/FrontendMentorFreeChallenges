@@ -6,12 +6,14 @@ import close_menu from './images/icon-close-menu.svg'
 import * as S from './styles/STYLED/style'
 import { Stand } from './components/Stand'
 import { ModalStand } from './components/ModalStand'
+import { ModalCompleted } from './components/ModalCompleted'
 import { useState } from 'react'
 
 export default function App() {
   const [showHideMenu, setShowHideMenu] = useState<boolean>(false)
   const [activeBookmark, setactiveBookmark] = useState<boolean>(false)
   const [showHideFirstModal, setShowHideFirstModal] = useState<boolean>(false)
+  const [modalFirstOption, setModalFirstOption] = useState<number>(0)
 
   const [showHideOverlay, setShowHideOverlay] = useState<boolean>(false)
 
@@ -23,13 +25,17 @@ export default function App() {
     setactiveBookmark(!activeBookmark)
   }
 
-  function openCloseFirstModal() {
+  function openCloseFirstModal(e: any) {
     setShowHideFirstModal(!showHideFirstModal)
+    setModalFirstOption(parseInt(e.target.value))
     setOverlay()
   }
 
   function setOverlay() {
     setShowHideOverlay(!showHideOverlay)
+  }
+  function modalFirstOptionChoose(e: any) {
+    console.log(e.target.value)
   }
   return (
     <>
@@ -60,37 +66,9 @@ export default function App() {
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
             in the world?
           </p>
-          <ModalStand title="Pledge with no reward" id={0}>
-            Choose to support us without a reward if you simply believe in our
-            project. As a backer, you will be signed up to receive product
-            updates via email.
-          </ModalStand>
-          <ModalStand title="Bamboo Stand" min_pledge="25" left={101} id={1}>
-            You get an ergonomic stand made of natural bamboo. You've helped us
-            launch our promotional campaign, and you'll be added to a special
-            Backer member list.
-          </ModalStand>
-          <ModalStand
-            title="Black Edition Stand"
-            min_pledge="75"
-            left={64}
-            id={2}
-          >
-            You get a Black Special Edition computer stand and a personal thank
-            you. You'll be added to our Backer member list. Shipping is
-            included.
-          </ModalStand>
-          <ModalStand
-            title="Mahogany Special Edition"
-            min_pledge="200"
-            left={0}
-            id={3}
-          >
-            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
-            personal thank you. You'll be added to our Backer member list.
-            Shipping is included.
-          </ModalStand>
+          <ModalStand openCloseFirstModal={openCloseFirstModal} />
         </S.FirstModal>
+        <ModalCompleted/>
         <header>
           <nav>
             <img id="logo_header" src={logo} alt="Crowdfund logo" />
@@ -163,6 +141,7 @@ export default function App() {
               min_pledge="25"
               available="Select Reward"
               openCloseFirstModal={openCloseFirstModal}
+              option={2}
             >
               You get an ergonomic stand made of natural bamboo. You've helped
               us launch our promotional campaign, and you'll be added to a
@@ -174,6 +153,7 @@ export default function App() {
               min_pledge="75"
               available="Select Reward"
               openCloseFirstModal={openCloseFirstModal}
+              option={3}
             >
               You get a Black Special Edition computer stand and a personal
               thank you. You'll be added to our Backer member list. Shipping is
@@ -185,6 +165,7 @@ export default function App() {
               min_pledge="200"
               available="Out of Stock"
               openCloseFirstModal={openCloseFirstModal}
+              option={4}
             >
               You get two Special Edition Mahogany stands, a Backer T-Shirt, and
               a personal thank you. You'll be added to our Backer member list.
