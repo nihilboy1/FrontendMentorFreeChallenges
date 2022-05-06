@@ -1,2 +1,2 @@
 # ALL-FREE-FRONT-END-MENTOR-CHALLENGES
-Aqui estarão todos os desafios grátis do frontend mentor
+Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor.io/home para praticar a aprimorar minha técnica.
