@@ -11,6 +11,8 @@ export const ModalStand = ({ openCloseFirstModal }: Props) => {
   const [fourLeft, setFourLeft] = useState<number>(0)
   const [openClosePladge, setOpenClosePladge] = useState<number>(0)
 
+
+
   function openClosePledgeBoxes(e: any) {
     setOpenClosePladge(parseInt(e.target.value))
   }

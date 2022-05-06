@@ -143,14 +143,11 @@ export const FourStandBox = styled.div<{
 `
 
 export const CompletedModal = styled.div`
-
   position: absolute;
   gap: 25px;
   z-index: 2;
   border-radius: 10px;
-  display: ${props => {
-      return props.openClosePladge === 4 ? 'flex' : 'none'
-    }};
+  display: none;
   padding: 22px;
   flex-direction: column;
   align-items: center;
@@ -167,7 +164,7 @@ export const CompletedModal = styled.div`
     color: hsl(0, 0%, 48%);
     font-size: 0.9rem;
   }
-  button{
+  button {
     border-radius: 25px;
     color: white;
     font-weight: 600;
@@ -179,5 +176,4 @@ export const CompletedModal = styled.div`
   img {
     width: 65px;
   }
- 
 `

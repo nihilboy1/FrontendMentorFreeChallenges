@@ -13,8 +13,6 @@ export default function App() {
   const [showHideMenu, setShowHideMenu] = useState<boolean>(false)
   const [activeBookmark, setactiveBookmark] = useState<boolean>(false)
   const [showHideFirstModal, setShowHideFirstModal] = useState<boolean>(false)
-  const [modalFirstOption, setModalFirstOption] = useState<number>(0)
-
   const [showHideOverlay, setShowHideOverlay] = useState<boolean>(false)
 
   function openCloseMenu() {
@@ -27,16 +25,13 @@ export default function App() {
 
   function openCloseFirstModal(e: any) {
     setShowHideFirstModal(!showHideFirstModal)
-    setModalFirstOption(parseInt(e.target.value))
     setOverlay()
   }
 
   function setOverlay() {
     setShowHideOverlay(!showHideOverlay)
   }
-  function modalFirstOptionChoose(e: any) {
-    console.log(e.target.value)
-  }
+
   return (
     <>
       <S.MobileMenu showHideMenu={showHideMenu} id="mobile_menu">
@@ -52,7 +47,10 @@ export default function App() {
       </S.MobileMenu>
       <main>
         <S.Overlay showHideOverlay={showHideOverlay} id="overlay" />
-        <S.FirstModal showHideFirstModal={showHideFirstModal} id="first_modal">
+        <S.FirstModal
+          showHideFirstModal={showHideFirstModal}
+          id="first_modal"
+        >
           <div id="modal_header">
             <h2>Back this project</h2>
             <img
@@ -68,7 +66,7 @@ export default function App() {
           </p>
           <ModalStand openCloseFirstModal={openCloseFirstModal} />
         </S.FirstModal>
-        <ModalCompleted/>
+        <ModalCompleted />
         <header>
           <nav>
             <img id="logo_header" src={logo} alt="Crowdfund logo" />
