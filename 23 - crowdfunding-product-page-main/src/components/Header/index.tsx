@@ -1,26 +1,34 @@
 import * as S from './style'
 import logoImg from '../../images/logo.svg'
-import menuImg from '../../images/icon-hamburger.svg'
+import openMenuImg from '../../images/icon-hamburger.svg'
+import { Popover } from '@headlessui/react'
+import { Menu } from '../Menu'
 
 export function Header() {
 
   return (
     <S.Header>
-      <div>
+      <Popover className="header_div">
         <img
           className="logoImg"
           src={logoImg}
           alt="Imagem da logo da Crowdfund"
-          onClick={() => {window.location.reload()}}
+          onClick={() => {
+            window.location.reload()
+          }}
         />
-        <button>
+        <Popover.Button>
           <img
             className="menuImg"
-            src={menuImg}
+            src={openMenuImg}
             alt="Ícone de para abrir o menu"
           />
-        </button>
-      </div>
+        </Popover.Button>
+        <Popover.Overlay className="overlay" />
+        <Popover.Panel>
+          <Menu/>
+        </Popover.Panel>
+      </Popover>
     </S.Header>
   )
 }

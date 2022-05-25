@@ -11,21 +11,21 @@ export function MainContent() {
         you'll be added to a special Backer member list."
         title="Bamboo Stand"
         left={101}
-        minplage="25"
+        minpladge="25"
       />
       <Stand
         description="You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer 
         member list. Shipping is included."
         title="Black Edition Stand"
         left={64}
-        minplage="75"
+        minpladge="75"
       />
       <Stand
-        description="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+        description="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added 
         to our Backer member list. Shipping is included."
         title="Mahogany Special Edition"
         left={0}
-        minplage="200"
+        minpladge="200"
       />
     </S.MainContent>
   )

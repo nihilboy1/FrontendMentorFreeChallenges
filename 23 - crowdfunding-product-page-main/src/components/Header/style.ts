@@ -8,15 +8,21 @@ export const Header = styled.header`
   background-size: contain;
   padding: 1.4rem;
 
-  div{
+  .header_div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 9.5rem;
 
+  }
+
+  .menuImg{
+    z-index: 3;
   }
 
   .logoImg{
     width: 7rem;
     cursor: pointer;
   }
+
+
 `

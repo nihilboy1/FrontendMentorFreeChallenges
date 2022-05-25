@@ -57,7 +57,7 @@ export const Stand = styled.div<StandTypes>`
       }
     }
 
-    button {
+    .stand_button {
       border-radius: 1.5rem;
       padding: 0.7rem 1.5rem;
       font-size: 0.8rem;
