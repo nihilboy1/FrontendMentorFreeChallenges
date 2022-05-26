@@ -1,12 +1,20 @@
-import * as S from "./style"
-export function PladgeEnter() {
+import * as S from './style'
+
+interface PladgeEnterProps {
+  checked: boolean
+}
+
+export function PladgeEnter({ checked }: PladgeEnterProps) {
   return (
-    <div>
+    <S.PladgeEnter className="pladge_box" checked={checked} >
       <h2>Enter your pledge</h2>
-      <div>
-        <input type="text" />
+      <div className="input_box">
+        <div className="dollar_box">
+          <p>$</p>
+          <input type="number" />
+        </div>
         <button>Continue</button>
       </div>
-    </div>
+    </S.PladgeEnter>
   )
 }

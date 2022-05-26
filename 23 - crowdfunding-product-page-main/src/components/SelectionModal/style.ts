@@ -9,7 +9,7 @@ export const SelectionModal = styled.div`
   border-radius: 0.5rem;
   z-index: 1;
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
-  top: 72rem;
+  top: 60rem;
 
   .modal_header {
     div {

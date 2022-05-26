@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
     box-sizing: border-box;
     font: 400 16px 'Commissioner', sans-serif;
+    transition: all 0.4s;
   }
 
   button{
@@ -21,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: none;
   }
 
   .overlay{

@@ -30,6 +30,7 @@ export const SelectionModalOption = styled.div<SelectionModalOptionTypes>`
       left: 0.7rem;
       transform: translate(-50%, -50%);
       border: 1px solid hsl(0, 0%, 90%);
+      cursor: pointer;
     }
   }
 
