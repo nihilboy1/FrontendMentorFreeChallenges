@@ -8,7 +8,6 @@ export const GlobalStyles = createGlobalStyle`
     outline: 0;
     border: none;
     box-sizing: border-box;
-    border: 1px solid grey;
     font: 400 16px 'Commissioner', sans-serif;
   }
 

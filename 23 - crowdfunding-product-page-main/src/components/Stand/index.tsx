@@ -1,5 +1,5 @@
 import * as S from './style'
-import { SelectionModal } from '../../SelectionModal'
+import { SelectionModal } from '../SelectionModal'
 import { Popover } from '@headlessui/react'
 
 interface StandProps {

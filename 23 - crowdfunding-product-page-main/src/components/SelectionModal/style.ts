@@ -5,17 +5,11 @@ export const SelectionModal = styled.div`
   left: 1.1rem;
   background-color: white;
   width: 18rem;
-  height: 18rem;
+  min-height: 77rem;
   border-radius: 0.5rem;
   z-index: 1;
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
-
-  .radio_group_option{
-  }
-
-  .black {
-    border: 1px solid green;
-  }
+  top: 72rem;
 
   .modal_header {
     div {
@@ -33,6 +27,8 @@ export const SelectionModal = styled.div`
     .modal_description {
       margin-top: 1rem;
       color: grey;
+      padding: 0.2rem 0rem;
+      line-height: 1.3rem;
     }
   }
 `

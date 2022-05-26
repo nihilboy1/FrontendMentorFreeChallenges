@@ -1,5 +1,5 @@
-import { About } from './About'
-import { Stand } from './Stand'
+import { About } from '../About'
+import { Stand } from '../Stand'
 import * as S from './style'
 
 export function MainContent() {

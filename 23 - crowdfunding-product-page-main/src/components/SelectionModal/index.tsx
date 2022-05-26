@@ -2,7 +2,7 @@ import * as S from './style'
 import { Popover } from '@headlessui/react'
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
-import { SelectionModalOption } from './SelectionModalOption'
+import { SelectionModalOption } from '../SelectionModalOption'
 
 import closeModalImg from '../../images/icon-close-modal.svg'
 
