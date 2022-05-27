@@ -2,6 +2,7 @@ import * as S from './style'
 import { SelectionModal } from '../SelectionModal'
 import { Popover } from '@headlessui/react'
 
+
 interface StandProps {
   title: string
   minpladge: string
@@ -24,7 +25,7 @@ export function Stand({ title, minpladge, description, left }: StandProps) {
           <span>{left}</span>
           <p>left</p>
         </div>
-        <Popover.Button className="stand_button">
+        <Popover.Button className="stand_button" >
           {left > 0 ? 'Select Reward' : 'Out of Stock'}
         </Popover.Button>
         <Popover.Overlay className="overlay"/>

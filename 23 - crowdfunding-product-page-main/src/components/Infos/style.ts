@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Infos = styled.div`
+interface InfosProps {
+  percentBacked: number
+}
+
+export const Infos = styled.div<InfosProps>`
   width: 18rem;
   height: 23.6rem;
   align-self: center;
@@ -11,22 +15,22 @@ export const Infos = styled.div`
   border: 1px solid hsl(0, 0%, 90%);
   background-color: white;
 
-  .main_infos_box{
+  .main_infos_box {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    div{
+    div {
       margin-bottom: 1rem;
       border-bottom: 1px solid hsl(0, 0%, 90%);
     }
 
-    h2{
+    h2 {
       font-size: 1.7rem;
       font-weight: 700;
     }
 
-    p{
+    p {
       font-size: 0.7rem;
       color: grey;
       margin-top: 0.5rem;
@@ -34,7 +38,7 @@ export const Infos = styled.div`
     }
   }
 
-  .loading_box{
+  .loading_box {
     height: 0.7rem;
     border-radius: 0.5rem;
     display: flex;
@@ -44,13 +48,11 @@ export const Infos = styled.div`
     overflow: hidden;
     background-color: hsl(0, 0%, 90%);
 
-
-    .loading_bar{
+    .loading_bar {
       height: 100%;
       border-radius: 0.5rem;
-      width: 80%;
+      width: ${(props) => {return `${props.percentBacked}%` }};
       background-color: hsl(176, 50%, 47%);
     }
   }
-
 `

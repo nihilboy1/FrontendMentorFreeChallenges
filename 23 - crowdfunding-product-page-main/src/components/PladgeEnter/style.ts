@@ -2,13 +2,21 @@ import styled from 'styled-components'
 
 interface PladgeEnterTypes {
   checked: boolean
+  confirmOperation: boolean
 }
 
-export const PladgeEnter = styled.form<PladgeEnterTypes>`
-  margin-top: ${(props) => {return props.checked ? '1rem' : '0rem'}};
-  border-top: ${(props) => {return props.checked ? '1px solid hsl(0, 0%, 90%);' : ''}};
-  height: ${(props) => {return props.checked ? 'auto' : '0rem'}};
+export const PladgeEnter = styled.div<PladgeEnterTypes>`
+  margin-top: ${props => {
+    return props.checked ? '1rem' : '0rem'
+  }};
+  border-top: ${props => {
+    return props.checked ? '1px solid hsl(0, 0%, 90%);' : ''
+  }};
+  height: ${props => {
+    return props.checked ? 'auto' : '0rem'
+  }};
   overflow: hidden;
+  cursor: default;
 
   h2 {
     text-align: center;
@@ -49,10 +57,21 @@ export const PladgeEnter = styled.form<PladgeEnterTypes>`
       width: 50%;
       padding: 0.7rem;
       cursor: pointer;
-      background-color: hsl(176, 50%, 47%);
+      background-color: ${props => {
+        return props.confirmOperation ? 'hsl(176, 50%, 47%)' : 'hsl(0, 0%, 90%)'
+      }};
       color: white;
       font-weight: 500;
       font-size: 0.8rem;
+      pointer-events: ${props => {
+        return props.confirmOperation ? '' : 'none'
+      }};
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
   }
 `

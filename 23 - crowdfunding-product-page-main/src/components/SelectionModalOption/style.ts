@@ -2,9 +2,13 @@ import styled from 'styled-components'
 
 interface SelectionModalOptionTypes {
   checked: boolean
+  left?: number
 }
 
 export const SelectionModalOption = styled.div<SelectionModalOptionTypes>`
+  opacity: ${props => {
+        return props.left != null && props.left <= 0 ? '0.4' : '1'
+      }};
   padding: 1.8rem 1.2rem;
   border: ${props => {
     return props.checked
@@ -13,6 +17,10 @@ export const SelectionModalOption = styled.div<SelectionModalOptionTypes>`
   }};
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+  pointer-events: ${props => {
+        return props.left != null && props.left <= 0 ? 'none' : ''
+      }};;
 
   .modal_option_header {
     display: flex;

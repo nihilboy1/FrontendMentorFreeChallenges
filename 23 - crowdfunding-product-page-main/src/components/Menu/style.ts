@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Menu = styled.div`
   display: flex;
   width: 18rem;
-  height: 12rem;
   position: absolute;
   top: 4.5rem;
   left: 1.1rem;
@@ -11,13 +10,16 @@ export const Menu = styled.div`
   justify-content: space-between;
   background-color: white;
   border-radius: 0.5rem;
+  overflow: hidden;
 
   button {
-    padding: 1.2rem;
+    padding: 1rem;
     font-weight: 500;
-    height: 1fr;
     width: 100%;
     text-align: left;
+    &:hover{
+      background-color: hsl(0, 0%, 90%) ;
+    }
   }
 
   .middle_button {
