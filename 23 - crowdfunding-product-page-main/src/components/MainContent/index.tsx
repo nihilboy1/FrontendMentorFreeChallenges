@@ -2,6 +2,8 @@ import { About } from '../About'
 import { Stand } from '../Stand'
 import { useContext } from 'react'
 import { MyContext } from '../../context/MyContext'
+import { SuccessModal } from '../SuccessModal'
+
 import * as S from './style'
 
 export function MainContent() {
@@ -30,6 +32,7 @@ export function MainContent() {
         left={mahoganyditionleft}
         minpladge="200"
       />
+      <SuccessModal></SuccessModal>
     </S.MainContent>
   )
 }
