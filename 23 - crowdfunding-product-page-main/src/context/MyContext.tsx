@@ -12,12 +12,14 @@ type MyContextType = {
   setBamboostandleft: (value: number) => void
   setBlackeditionleft: (value: number) => void
   setMahoganyditionleft: (value: number) => void
+  setOpenCloseSuccessModal: (value: boolean) => void
   inputPladge: number
   backers: number
   backed: number
   bamboostandleft: number
   blackeditionleft: number
   mahoganyditionleft: number
+  openCloseSuccessModal: boolean
 }
 
 const initialValue = {
@@ -28,12 +30,14 @@ const initialValue = {
   setBamboostandleft: () => {},
   setBlackeditionleft: () => {},
   setMahoganyditionleft: () => {},
+  setOpenCloseSuccessModal: () => {},
   inputPladge: 0,
   backers: 5007,
   backed: 89914,
   bamboostandleft: 101,
   blackeditionleft: 64,
-  mahoganyditionleft: 0
+  mahoganyditionleft: 0,
+  openCloseSuccessModal: false,
 }
 
 export const MyContext = createContext<MyContextType>(initialValue)
@@ -52,13 +56,19 @@ export const MyContextProvider = ({ children }: MyContextProps) => {
     initialValue.mahoganyditionleft
   )
 
+  const [openCloseSuccessModal, setOpenCloseSuccessModal] = useState(
+    initialValue.openCloseSuccessModal
+  )
+
   function resetInputPladge() {
     setInputPladge(0)
   }
 
+
   return (
     <MyContext.Provider
       value={{
+        openCloseSuccessModal,
         inputPladge,
         backers,
         backed,
@@ -71,7 +81,8 @@ export const MyContextProvider = ({ children }: MyContextProps) => {
         setBackers,
         setBamboostandleft,
         setBlackeditionleft,
-        setMahoganyditionleft
+        setMahoganyditionleft,
+        setOpenCloseSuccessModal
       }}
     >
       {children}

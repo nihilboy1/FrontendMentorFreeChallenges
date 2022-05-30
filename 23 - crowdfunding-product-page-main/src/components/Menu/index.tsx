@@ -1,12 +1,12 @@
 import * as S from './style'
-import { Popover } from '@headlessui/react'
-import { useEffect } from 'react'
 
+interface MenuProps {
+  openCloseMenu: boolean
+}
 
-
-export function Menu() {
+export function Menu({ openCloseMenu }: MenuProps) {
   return (
-    <S.Menu>
+    <S.Menu openCloseMenu={openCloseMenu}>
       <button>About</button>
       <button className="middle_button">Discover</button>
       <button>Get Started</button>

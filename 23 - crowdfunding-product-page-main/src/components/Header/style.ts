@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import mobileBG from "../../images/image-hero-mobile.jpg"
+import mobileBG from '../../images/image-hero-mobile.jpg'
+import desktopBG from '../../images/image-hero-desktop.jpg'
 
 
 export const Header = styled.header`
@@ -8,21 +9,44 @@ export const Header = styled.header`
   background-size: contain;
   padding: 1.4rem;
 
-  .header_div{
+  .header_div {
     display: flex;
     align-items: center;
     gap: 9.5rem;
-
   }
 
-  .menuImg{
+  .menuImg {
     z-index: 3;
   }
 
-  .logoImg{
+  .logoImg {
     width: 7rem;
     cursor: pointer;
   }
 
+  @media (min-width: 1000px) {
+    width: 100%;
+    background-image: ${`url(${desktopBG})`};
+    background-size: cover;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    
 
+    .header_div {
+      margin-top: 1rem;
+      width: 80%;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 12rem;
+    }
+
+    .logoImg{
+      width: 7.5rem;
+    }
+
+    .menuImg{
+      display: none;
+    }
+  }
 `

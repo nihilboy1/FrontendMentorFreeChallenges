@@ -23,7 +23,9 @@ export function PladgeEnter({
     setBacked,
     backed,
     setBackers,
-    backers
+    backers,
+    setOpenCloseSuccessModal,
+    openCloseSuccessModal
   } = useContext(MyContext)
 
   const confirmOperation = inputPladge >= minpladge
@@ -52,9 +54,10 @@ export function PladgeEnter({
           onClick={() => {
             setBacked(backed + inputPladge)
             setBackers(backers + 1)
-            if (setLeft){
+            if (setLeft) {
               setLeft(left - 1)
             }
+            setOpenCloseSuccessModal(!openCloseSuccessModal)
           }}
         >
           Continue

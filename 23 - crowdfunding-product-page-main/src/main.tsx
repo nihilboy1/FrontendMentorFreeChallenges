@@ -4,6 +4,8 @@ import App from './App'
 import { MyContextProvider } from './context/MyContext'
 import { GlobalStyles } from './globals'
 
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <GlobalStyles />
