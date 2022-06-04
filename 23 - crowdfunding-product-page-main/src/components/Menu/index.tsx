@@ -7,9 +7,11 @@ interface MenuProps {
 export function Menu({ openCloseMenu }: MenuProps) {
   return (
     <S.Menu openCloseMenu={openCloseMenu}>
-      <button>About</button>
-      <button className="middle_button">Discover</button>
-      <button>Get Started</button>
+      <a href="#about">About</a>
+      <a href="#discover" className="middle_link">
+        Discover
+      </a>
+      <a href="#getstarted">Get Started</a>
     </S.Menu>
   )
 }

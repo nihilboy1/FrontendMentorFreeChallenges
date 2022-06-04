@@ -17,14 +17,20 @@ export const Menu = styled.div<MenuProps>`
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
+  border: 1px solid hsl(0, 0%, 90%);
 
-  button {
+
+  a {
     padding: 1rem;
     font-weight: 500;
     width: 100%;
     text-align: left;
+    text-decoration: none;
+    color: black;
     &:hover {
       background-color: hsl(0, 0%, 90%);
+      text-decoration: underline;
+      
     }
   }
 
@@ -38,10 +44,11 @@ export const Menu = styled.div<MenuProps>`
     background-color: transparent;
     flex-direction: row;
     left: 72%;
-    top: 2.5rem;
+    top: 2.8rem;
     width: 14rem;
+    border: none;
 
-    button {
+    a {
       padding: 0;
       color: white;
       font-size: 0.8rem;
@@ -51,7 +58,7 @@ export const Menu = styled.div<MenuProps>`
       }
     }
 
-    .middle_button {
+    .middle_link {
       border-bottom: none;
       border-top: none;
     }

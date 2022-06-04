@@ -7,7 +7,7 @@ import { useState } from 'react'
 export function SubHeader() {
   const [markState, setMarkState] = useState(false)
   return (
-    <S.SubHeader>
+    <S.SubHeader markState={markState}>
       <img
         className="mastercraft-logo"
         src={mastercraftLogoImg}
@@ -15,7 +15,8 @@ export function SubHeader() {
       />
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p>
-        A beautifully handcrafted monitor stand to reduce neck and eye strain.
+        A beautiful &#38; handcrafted monitor stand to reduce neck and eye
+        strain.
       </p>
       <div className="buttons_box">
         <button className="backthisproject">Back this project</button>
@@ -28,6 +29,7 @@ export function SubHeader() {
           <img
             src={markState ? changedBookmarkImg : bookmarkImg}
             alt="Simbolo 'Bookmark'"
+            className="img_bookmark"
           />
         </button>
       </div>

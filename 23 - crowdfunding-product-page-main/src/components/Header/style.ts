@@ -28,13 +28,13 @@ export const Header = styled.header`
     width: 100%;
     background-image: ${`url(${desktopBG})`};
     background-size: cover;
-    height: 23rem;
+    height: 23.3rem;
     display: flex;
     justify-content: center;
     
 
     .header_div {
-      margin-top: 1rem;
+      margin-top: 1.4rem;
       width: 80%;
       justify-content: space-between;
       align-items: flex-start;
