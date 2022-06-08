@@ -47,7 +47,7 @@ export const SuccessModal = styled.div<SuccessModalProps>`
     font-size: 0.8rem;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

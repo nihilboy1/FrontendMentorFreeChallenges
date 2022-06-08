@@ -34,7 +34,7 @@ export const SelectionModal = styled.div`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

@@ -25,7 +25,7 @@ export const AppStyle = styled.div<AppStyleProps>`
     opacity: 0.3;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 100%;
   }
 `

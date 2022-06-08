@@ -77,7 +77,7 @@ export const Stand = styled.div<StandTypes>`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
       .stand_box{
         height: 14.1rem;
         padding: 1.55rem 2rem;

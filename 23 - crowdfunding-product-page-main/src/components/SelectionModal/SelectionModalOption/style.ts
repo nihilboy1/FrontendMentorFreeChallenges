@@ -78,7 +78,7 @@ export const SelectionModalOption = styled.div<SelectionModalOptionTypes>`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     padding-left: 4.5rem;
     padding-top: 1.8rem;
     .modal_option_text {

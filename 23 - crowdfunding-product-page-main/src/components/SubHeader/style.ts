@@ -63,7 +63,7 @@ export const SubHeader = styled.div<SubHeaderProps>`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 43rem;
     margin-top: -5rem;
 

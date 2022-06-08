@@ -1,5 +1,5 @@
-import { About } from '../About'
-import { Stand } from '../Stand'
+import { About } from './About'
+import { Stand } from './Stand'
 import { useContext } from 'react'
 import { MyContext } from '../../context/MyContext'
 import { SuccessModal } from '../SuccessModal'

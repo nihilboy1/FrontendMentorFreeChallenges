@@ -24,7 +24,7 @@ export const Header = styled.header`
     cursor: pointer;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 100%;
     background-image: ${`url(${desktopBG})`};
     background-size: cover;

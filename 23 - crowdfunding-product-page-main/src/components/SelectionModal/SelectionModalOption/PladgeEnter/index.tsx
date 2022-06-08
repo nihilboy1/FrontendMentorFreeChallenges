@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react'
-import { MyContext } from '../../context/MyContext'
+import { MyContext } from '../../../../context/MyContext'
 import { Popover } from '@headlessui/react'
 
 import * as S from './style'

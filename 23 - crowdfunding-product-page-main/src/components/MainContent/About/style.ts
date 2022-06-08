@@ -17,7 +17,7 @@ export const About = styled.div`
     line-height: 1.4rem;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     h2{
       font-size: 1.25rem;
     }

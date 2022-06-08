@@ -1,8 +1,8 @@
 import * as S from './style'
-import { PladgeEnter } from '../PladgeEnter'
+import { PladgeEnter } from './PladgeEnter'
 import { Popover } from '@headlessui/react'
 import { useContext } from 'react'
-import { MyContext } from '../../context/MyContext'
+import { MyContext } from '../../../context/MyContext'
 
 interface SelectionModalOptionProps {
   checked: boolean

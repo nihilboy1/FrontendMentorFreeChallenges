@@ -58,7 +58,7 @@ export const Infos = styled.div<InfosProps>`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 43rem;
     height: 12.8rem;
     padding: 2.8rem 3.2rem;

@@ -39,7 +39,7 @@ export const Menu = styled.div<MenuProps>`
     border-top: 1px solid hsl(0, 0%, 90%);
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     display: flex;
     background-color: transparent;
     flex-direction: row;

@@ -75,7 +75,7 @@ export const PladgeEnter = styled.div<PladgeEnterTypes>`
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     padding: 0rem 1.1rem;
     display: flex;
     align-items: center;
