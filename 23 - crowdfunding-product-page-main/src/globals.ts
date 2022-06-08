@@ -10,8 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     font: 400 16px 'Commissioner', sans-serif;
     transition: all 0.4s;
     
-    @media (min-width: 1000px) {
-  }
+
   }
 
   
@@ -37,6 +36,12 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
     background-color: black;
     opacity: 0.3;
+  }
+
+  @media (min-width: 1000px) {
+    .overlay{
+      opacity: 0.5;
+    }
   }
 
 

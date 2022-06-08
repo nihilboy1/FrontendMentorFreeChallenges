@@ -44,7 +44,12 @@ export function SelectionModalOption({
         <span>{left}</span>
         <p>{left >= 0 && left != null ? 'left' : ''}</p>
       </div>
-      <PladgeEnter setLeft={setLeft} left={left} minpladge={minpladge} checked={checked} />
+      <PladgeEnter
+        setLeft={setLeft}
+        left={left}
+        minpladge={minpladge}
+        checked={checked}
+      />
     </S.SelectionModalOption>
   )
 }

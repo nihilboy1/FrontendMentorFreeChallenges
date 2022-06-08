@@ -46,4 +46,10 @@ export const SuccessModal = styled.div<SuccessModalProps>`
     font-weight: 500;
     font-size: 0.8rem;
   }
+
+  @media (min-width: 1000px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 `

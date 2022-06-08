@@ -42,7 +42,7 @@ export function PladgeEnter({
           <p>$</p>
           <input
             type="number"
-            value={inputPladge != 0 ? inputPladge : ''}
+            value={inputPladge > 0 ? inputPladge : ''}
             onChange={e => {
               if (parseInt(e.target.value) > 0) {
                 setInputPladge(parseInt(e.target.value))

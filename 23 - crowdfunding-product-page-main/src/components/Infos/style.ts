@@ -51,8 +51,47 @@ export const Infos = styled.div<InfosProps>`
     .loading_bar {
       height: 100%;
       border-radius: 0.5rem;
-      width: ${(props) => {return `${props.percentBacked}%` }};
+      width: ${props => {
+        return `${props.percentBacked}%`
+      }};
       background-color: hsl(176, 50%, 47%);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    width: 43rem;
+    height: 12.8rem;
+    padding: 2.8rem 3.2rem;
+
+    .main_infos_box {
+      flex-direction: row;
+      width: 100%;
+
+      div {
+        width: 28%;
+        border-bottom: none;
+        border-right: 1px solid hsl(0, 0%, 90%);
+        height: 4rem;
+        margin-bottom: 2rem;
+      }
+      .last_info{
+        padding-left: 2.5rem;
+        border: none;
+      }
+      .center_info {
+        padding-left: 3rem;
+        width: 14rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        text-align: left;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: left;
+      }
     }
   }
 `

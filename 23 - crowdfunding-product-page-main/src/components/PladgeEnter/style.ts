@@ -74,4 +74,23 @@ export const PladgeEnter = styled.div<PladgeEnterTypes>`
       margin: 0;
     }
   }
+
+  @media (min-width: 1000px) {
+    padding: 0rem 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -4.5rem;
+    width: 37.3rem;
+    margin-bottom: -1rem;
+
+    .input_box {
+      margin: 1.2rem 1.2rem 0.8rem 1.2rem;
+      width: 40%;
+    }
+
+    h2{
+      font-size: 0.9rem;
+    }
+  }
 `

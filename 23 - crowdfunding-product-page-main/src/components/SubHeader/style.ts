@@ -99,10 +99,14 @@ export const SubHeader = styled.div<SubHeaderProps>`
       align-items: center;
       border-radius: 1.5rem;
       background-color: #dedede;
+      color: #707070;
+
 
       &::after {
         content: 'Bookmark';
-        color: ${({markState}) => {return markState ? "hsl(176, 50%, 47%)" : "#2F2F2F" }};
+        color: ${({ markState }) => {
+          return markState ? 'hsl(176, 50%, 47%)' : '#2F2F2F'
+        }};
         margin-top: 0rem;
         margin-right: 1rem;
         font-weight: 600;

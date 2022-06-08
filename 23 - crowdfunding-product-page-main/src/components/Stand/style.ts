@@ -63,9 +63,60 @@ export const Stand = styled.div<StandTypes>`
       font-size: 0.8rem;
       font-weight: 700;
       color: white;
-      background-color: ${(props) => {return props.left > 0 ? "hsl(176, 50%, 47%)" : "grey"}};
+      background-color: ${props => {
+        return props.left > 0 ? 'hsl(176, 50%, 47%)' : 'grey'
+      }};
       width: 8.8rem;
-      cursor: ${(props) => {return props.left > 0 ? "pointer" : "not-allowed"}};;
+      cursor: ${props => {
+        return props.left > 0 ? 'pointer' : 'not-allowed'
+      }};
+
+      &:hover{
+        filter: brightness(90%);
+      }
     }
   }
+
+  @media (min-width: 1000px) {
+      .stand_box{
+        height: 14.1rem;
+        padding: 1.55rem 2rem;
+
+        header{
+          flex-direction: row;
+          justify-content: space-between;
+
+          h2{
+            font-size: 1.1rem;
+          }
+
+          p{
+            font-size: 0.9rem;
+          }
+        }
+
+        .description{
+          font-size: 0.92rem;
+          line-height: 1.8rem;
+        }
+
+        .leftandselect_box{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .left_box{
+            margin: 0;
+
+            span{
+              font-size: 1.9rem;
+            }
+          }
+        }
+
+        .stand_button{
+          padding: 0.9rem;
+        }
+      }
+    }
 `
