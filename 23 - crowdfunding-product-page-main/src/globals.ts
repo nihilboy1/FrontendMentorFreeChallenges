@@ -42,6 +42,10 @@ export const GlobalStyles = createGlobalStyle`
     .overlay{
       opacity: 0.5;
     }
+
+    body, #root, html{
+      min-height: 120rem
+    }
   }
 
 
