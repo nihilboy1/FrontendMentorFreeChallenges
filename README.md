@@ -24,5 +24,6 @@ Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor
 - Desafio 21: https://sunnyside-agency-landing-page21.netlify.app/
 - Desafio 22: https://blogr-landing-page22.netlify.app/
 - PÓS NLW
-- Desafio 23: Em breve...
+- Desafio 23: https://crowdfunding-product-page-23.netlify.app/
+- Desafio 24: https://expenses-chart-component-24.netlify.app/
 
