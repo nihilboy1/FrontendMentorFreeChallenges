@@ -14,6 +14,7 @@
     display: flex;
     width: 1.88rem;
     border-radius: 4px;
+    transition: 0.2s;
   }
 
   .amountPopover {
@@ -28,5 +29,9 @@
 
   &:hover > .amountPopover {
     opacity: 1;
+  }
+
+  &:hover > .spanBox {
+    opacity: 0.7;
   }
 }
