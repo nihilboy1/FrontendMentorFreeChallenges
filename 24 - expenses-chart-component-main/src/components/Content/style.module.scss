@@ -1,0 +1,46 @@
+.contentBox {
+  background-color: var(--white);
+  height: 23.5rem;
+  border-radius: 0.5rem;
+  padding: 1.3rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  .graphBox {
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  footer {
+    border-top: 1px solid rgb(216, 214, 214);
+    display: flex;
+    height: 4.95rem;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .lastMountPercent {
+      text-align: right;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .lowerParagraph {
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+
+    .totalAmount {
+      font-size: 1.68rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+      line-height: 1.8rem;
+    }
+  }
+}

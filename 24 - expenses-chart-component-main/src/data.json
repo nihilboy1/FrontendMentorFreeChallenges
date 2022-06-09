@@ -1,0 +1,37 @@
+[
+  {
+    "day": "mon",
+    "amount": 17.45,
+    "barHeight": "2.6rem"
+  },
+  {
+    "day": "tue",
+    "amount": 34.91,
+    "barHeight": "5.5rem"
+  },
+  {
+    "day": "wed",
+    "amount": 52.36,
+    "barHeight": "8.2rem"
+  },
+  {
+    "day": "thu",
+    "amount": 31.07,
+    "barHeight": "5rem"
+  },
+  {
+    "day": "fri",
+    "amount": 23.39,
+    "barHeight": "3.5rem"
+  },
+  {
+    "day": "sat",
+    "amount": 43.28,
+    "barHeight": "7rem"
+  },
+  {
+    "day": "sun",
+    "amount": 25.48,
+    "barHeight": "4rem"
+  }
+]

@@ -1,0 +1,31 @@
+.headerBox {
+  background-color: var(--red-200);
+  width: 19.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 1rem 1.2rem;
+  justify-content: space-between;
+  
+
+  .headerInnerBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    
+  }
+
+  h1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--white);
+  }
+
+  h2{
+    font-size: 1.4rem;
+    color: var(--white);
+  }
+
+  img{
+    width: 20%;
+  }
+}
