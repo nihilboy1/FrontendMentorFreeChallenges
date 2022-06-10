@@ -1,0 +1,63 @@
+.mainContainer {
+  background-color: var(--white);
+  box-shadow: 0px 1px 2px rgb(212, 212, 212);
+  width: 17.5rem;
+  height: 25.8rem;
+  margin-top: -9rem;
+  border-radius: 0.5rem;
+  padding: 1.8rem 1.4rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: var(--grayishBlue);
+    font-size: 0.65rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .priceBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--darkGrayishBlue);
+    }
+
+    span {
+      font-size: 0.75rem;
+      color: var(--grayishBlue);
+    }
+  }
+
+  .billingBox {
+    margin-top: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 0.65rem;
+        color: var(--grayishBlue);
+      }
+
+      .discountBox {
+        background-color: var(--lightGrayishRed);
+        color: var(--lightRed);
+        padding: 0.1rem;
+        border-radius: 0.5rem;
+        font-size: 0.5rem;
+        font-weight: 800;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

@@ -6,13 +6,12 @@
   box-sizing: border-box;
   border: none;
   font-family: 'Manrope', sans-serif;
-  color: var(--brown-500);
 }
 
 :root {
   --white: hsl(0, 0%, 100%);
 
-  --lightCyan: hsl(174, 77%, 80%);
+  --lightCyan: hsl(174, 67%, 64%);
   --strongCyan: hsl(174, 86%, 45%);
 
   --lightGrayishRed: hsl(14, 92%, 95%);
@@ -31,10 +30,9 @@
 body,
 #root,
 html {
-  background-color: var(--cream-200);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 

@@ -1,0 +1,29 @@
+.header {
+  width: 375px;
+  height: 21.4rem;
+  background-color: var(--moreLightGrayishBlue);
+  border-bottom-left-radius: 10rem;
+
+  .innerBackgroundImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center 3rem;
+    background-size: 7.5rem;
+    height: 100%;
+
+    h1 {
+      color: var(--darkGrayishBlue);
+      margin-top: 4.7rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      color: var(--grayishBlue);
+      font-size: 0.70rem;
+      line-height: 1.2rem;
+    }
+  }
+}
