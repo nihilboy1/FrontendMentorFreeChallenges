@@ -1,3 +1,4 @@
+
 .header {
   width: 375px;
   height: 21.4rem;
@@ -22,8 +23,14 @@
 
     p {
       color: var(--grayishBlue);
-      font-size: 0.70rem;
+      font-size: 0.7rem;
       line-height: 1.2rem;
+    }
+  }
+
+  @media (max-width: $desktopScreenSize) {
+    .header {
+      background-color: red;
     }
   }
 }

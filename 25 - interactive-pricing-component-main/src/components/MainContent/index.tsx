@@ -1,3 +1,4 @@
+import { Check } from 'phosphor-react'
 import { useState } from 'react'
 import { SliderComponent } from '../SliderComponent'
 
@@ -38,9 +39,21 @@ export function MainContent() {
           <span className={S.discountBox}>-25%</span>
         </div>
       </div>
-      <div>
-        
-      </div>
+      <footer>
+        <div>
+          <Check size={10} color="#008b7e" weight="bold" />
+          <p>Unlimited websites</p>
+        </div>
+        <div>
+          <Check size={10} color="#008b7e" weight="bold" />
+          <p>100% data ownership</p>
+        </div>
+        <div>
+          <Check size={10} color="#008b7e" weight="bold" />
+          <p>Email reports</p>
+        </div>
+        <button>Start my trial</button>
+      </footer>
     </main>
   )
 }

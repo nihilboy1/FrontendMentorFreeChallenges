@@ -18,6 +18,7 @@ export function SwitchComponent({
       inputProps={{ 'aria-label': 'controlled' }}
       checked={discountState}
       onChange={handleChange}
+      color="warning"
     />
   )
 }

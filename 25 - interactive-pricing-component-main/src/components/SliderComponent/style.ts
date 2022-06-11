@@ -14,8 +14,6 @@ export const StyledSlider = styled(Slider)`
     opacity: 1;
     color: var(--strongCyan);
   }
-  .MuiSlider-rail {
-  }
 
   .MuiSlider-thumb {
     width: 32px;
@@ -24,7 +22,7 @@ export const StyledSlider = styled(Slider)`
 
     &::before {
       background-color: transparent;
-      box-shadow: 0px 0px 25px var(--strongCyan);;
+      box-shadow: 0px 0px 25px var(--strongCyan);
     }
   }
 `
