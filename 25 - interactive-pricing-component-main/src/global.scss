@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
+$screenBreak: 800px;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border: none;
   font-family: 'Manrope', sans-serif;
+  transition: .2s;
 }
 
 :root {
@@ -33,7 +36,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  transition: none;
 }
 
 body,
@@ -55,8 +59,4 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
+

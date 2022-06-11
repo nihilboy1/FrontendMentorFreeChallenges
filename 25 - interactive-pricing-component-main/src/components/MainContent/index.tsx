@@ -15,43 +15,47 @@ export function MainContent() {
 
   return (
     <main className={S.mainContainer}>
-      <h2>{currentSliderPageViewsAmount} PAGEVIEWS</h2>
-      <SliderComponent
-        setCurrentSliderPrice={setCurrentSliderPrice}
-        setCurrentSliderPageViewsAmount={setCurrentSliderPageViewsAmount}
-      />
-      <div className={S.priceBox}>
-        <p>
-          ${discountState ? sliderPriceWithDiscount : currentSliderPrice}.00
-        </p>
-        <span>/ month</span>
-      </div>
-      <div className={S.billingBox}>
-        <div>
-          <p>Monthly Billing</p>
-          <SwitchComponent
-            setDiscountState={setDiscountState}
-            discountState={discountState}
-          />
+      <section className={S.headerSection}>
+        <h2>{currentSliderPageViewsAmount} PAGEVIEWS</h2>
+        <SliderComponent
+          setCurrentSliderPrice={setCurrentSliderPrice}
+          setCurrentSliderPageViewsAmount={setCurrentSliderPageViewsAmount}
+        />
+        <div className={S.priceBox}>
+          <p>
+            ${discountState ? sliderPriceWithDiscount : currentSliderPrice}.00
+          </p>
+          <span>/ month</span>
         </div>
-        <div>
-          <p>Yearly Billing</p>
-          <span className={S.discountBox}>-25%</span>
+        <div className={S.billingBox}>
+          <div>
+            <p>Monthly Billing</p>
+            <SwitchComponent
+              setDiscountState={setDiscountState}
+              discountState={discountState}
+            />
+          </div>
+          <div>
+            <p>Yearly Billing</p>
+            <span className={S.discountBox}>-25%</span>
+          </div>
         </div>
-      </div>
+      </section>
       <footer>
-        <div>
-          <Check size={10} color="#008b7e" weight="bold" />
-          <p>Unlimited websites</p>
-        </div>
-        <div>
-          <Check size={10} color="#008b7e" weight="bold" />
-          <p>100% data ownership</p>
-        </div>
-        <div>
-          <Check size={10} color="#008b7e" weight="bold" />
-          <p>Email reports</p>
-        </div>
+        <section className={S.footerSection}>
+          <div>
+            <Check size={10} color="#008b7e" weight="bold" />
+            <p>Unlimited websites</p>
+          </div>
+          <div>
+            <Check size={10} color="#008b7e" weight="bold" />
+            <p>100% data ownership</p>
+          </div>
+          <div>
+            <Check size={10} color="#008b7e" weight="bold" />
+            <p>Email reports</p>
+          </div>
+        </section>
         <button>Start my trial</button>
       </footer>
     </main>
