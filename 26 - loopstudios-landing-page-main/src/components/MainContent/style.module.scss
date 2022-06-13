@@ -1,0 +1,93 @@
+.mainBox {
+  width: 22rem;
+
+  .interactiveVRBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 1.2rem;
+    height: 40rem;
+
+    img {
+      margin-top: 5.4em;
+      width: 100%;
+    }
+
+    .textBox {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2.8rem;
+      padding-bottom: -1rem;
+      gap: 1rem;
+      h2 {
+        font-size: 1.92rem;
+        text-align: center;
+        font-family: 'josefin sans';
+      }
+
+      p {
+        padding: 0rem 1rem;
+        font-size: 0.88rem;
+        text-align: center;
+        line-height: 1.5rem;
+        color: var(--veryDarkGray);
+      }
+    }
+  }
+
+  .ourCreations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 83.2rem;
+    padding: 2.5rem 1.2rem;
+    h2 {
+      font-size: 1.92rem;
+      margin-bottom: 2.8rem;
+      text-align: center;
+      font-family: 'josefin sans';
+    }
+
+    .creationBox {
+      width: 100%;
+      padding: 1rem;
+      height: 7rem;
+      margin-top: 1.25rem;
+      display: flex;
+      align-items: flex-end;
+      background-size: 100%;
+      background-position: top center;
+      transition: 0.2s;
+      cursor: pointer;
+      filter: brightness(0.75);
+
+      &:hover {
+        opacity: 1;
+        background-size: 110%;
+        filter: brightness(1);
+      }
+
+      p {
+        width: 7.5rem;
+        font-size: 1.4rem;
+        color: var(--white);
+        font-family: 'josefin sans';
+        line-height: 1.5rem;
+        text-shadow: -1px 0px 5px rgba(0, 0, 0, 0.692);
+      }
+    }
+
+    button {
+      margin-top: 2rem;
+      border: 1px solid black;
+      padding: 0.5rem 2.5rem;
+      letter-spacing: 0.2rem;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--white);
+        background-color: black;
+      }
+    }
+  }
+}
