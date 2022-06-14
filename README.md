@@ -26,5 +26,7 @@ Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor
 - PÓS NLW
 - Desafio 23: https://crowdfunding-product-page-23.netlify.app/
 - Desafio 24: https://expenses-chart-component-24.netlify.app/
-- Desafio 25: Em breve...
+- Desafio 25: https://interactive-pricing-component-25.netlify.app/
+- Desafio 26: https://loopstudios-landing-page-26.netlify.app/
+- Desafio 27: Em breve...
 
