@@ -12,41 +12,85 @@
     width: 9rem;
   }
 
-  .linksBox {
-    height: 12rem;
+  .leftBox {
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .linksBox {
+      height: 12rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      p {
+        color: white;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .rightBox {
+    height: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    p {
-      color: white;
-      font-size: 0.9rem;
-    }
-  }
-
-  .socialBox {
-    display: flex;
-    width: 9rem;
     justify-content: space-between;
-  }
+    .socialBox {
+      display: flex;
+      width: 9rem;
+      justify-content: space-between;
+    }
 
-  .socialBox > *{
-    cursor: pointer;
-    opacity: 0.5;
+    .socialBox > * {
+      cursor: pointer;
+      opacity: 0.5;
 
-    &:hover {
-      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    p {
+      color: var(--darkGray);
+      font-size: 0.85rem;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
-  p {
-    color: var(--darkGray);
-    font-size: 0.85rem;
-    text-align: center;
-    cursor: pointer;
+  @media screen and (min-width: 800px) {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 10rem;
+    padding: 2.8rem 12%;
 
-    &:hover {
-      text-decoration: underline;
+    .rightBox {
+      height: 100%;
+      display: flex;
+      width: 20rem;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .leftBox {
+      display: flex;
+      height: 100%;
+      width: 22rem;
+      flex-direction: column;
+
+      .linksBox {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
     }
   }
 }

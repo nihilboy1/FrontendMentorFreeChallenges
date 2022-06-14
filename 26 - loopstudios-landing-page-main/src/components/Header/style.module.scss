@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
 
     h1 {
       font-size: 2.4rem;
@@ -29,6 +29,40 @@
       font-weight: 400;
       color: var(--white);
       line-height: 2.2rem;
+    }
+  }
+
+  @media (min-width: 780px) {
+    width: 100%;
+    padding: 3.8rem 11%;
+    background-image: url('../../images/desktop/image-hero.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .innerHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        width: 11.2rem;
+      }
+
+      .openMenuButton {
+        display: none;
+      }
+    }
+
+    .titleBox {
+      left: 28rem;
+      top: 21.5rem;
+      width: 37.5rem;
+      padding: 2rem;
+
+      h1 {
+        font-size: 4.4rem;
+        line-height: 4.2rem;
+      }
     }
   }
 }

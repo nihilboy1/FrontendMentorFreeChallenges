@@ -15,8 +15,8 @@ import curiosityImageMobile from '../../images/mobile/image-curiosity.jpg'
 import curiosityImageDesktop from '../../images/desktop/image-curiosity.jpg'
 import fisheyeImageMobile from '../../images/mobile/image-fisheye.jpg'
 import fisheyeImageDesktop from '../../images/desktop/image-fisheye.jpg'
+import { ImageBox } from './style'
 import S from './style.module.scss'
-import { useEffect } from 'react'
 
 const creationsData = [
   {
@@ -62,7 +62,6 @@ const creationsData = [
 ]
 
 export function MainContent() {
-  useEffect(() => {}, [window.innerWidth])
   return (
     <>
       <main className={S.mainBox}>
@@ -82,15 +81,14 @@ export function MainContent() {
           <h2>OUR CREATIONS</h2>
           {creationsData.map(item => {
             return (
-              <div
+              <ImageBox
                 key={item.title}
                 className={S.creationBox}
-                style={{
-                  backgroundImage: `url(${item.mobileImage})`
-                }}
+                mobileImage={item.mobileImage}
+                desktopImage={item.desktopImage}
               >
                 <p>{item.title}</p>
-              </div>
+              </ImageBox>
             )
           })}
           <button>SEE ALL</button>

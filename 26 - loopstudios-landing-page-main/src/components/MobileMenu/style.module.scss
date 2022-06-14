@@ -15,6 +15,7 @@
     .logo {
       width: 8.5rem;
     }
+
   }
 
   .menuItensBox {
@@ -24,7 +25,7 @@
     flex-direction: column;
     gap: 1.5rem;
 
-    p {
+    a {
       font-family: 'josefin sans';
       color: var(--white);
       font-size: 1.4rem;

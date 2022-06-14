@@ -1,8 +1,9 @@
 import S from './style.module.scss'
 import loopstudiosLogo from '../../images/logo.svg'
 import hamburgerIcon from '../../images/icon-hamburger.svg'
-import { Menu } from '../Menu'
+import { MobileMenu } from '../MobileMenu'
 import { Popover } from '@headlessui/react'
+import { DesktopMenu } from '../DesktopMenu'
 
 export function Header() {
   return (
@@ -10,11 +11,12 @@ export function Header() {
       <div className={S.innerHeader}>
         <img className={S.logo} src={loopstudiosLogo} alt="loopstudios Logo" />
         <Popover>
-          <Popover.Button>
+          <Popover.Button className={S.openMenuButton}>
             <img src={hamburgerIcon} alt="ícone para abrir o menu" />
           </Popover.Button>
-          <Menu />
+          <MobileMenu />
         </Popover>
+        <DesktopMenu />
       </div>
       <div className={S.titleBox}>
         <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>

@@ -9,7 +9,7 @@
     height: 40rem;
 
     img {
-      margin-top: 5.4em;
+      margin-top: 5.4rem;
       width: 100%;
     }
 
@@ -57,12 +57,12 @@
       align-items: flex-end;
       background-size: 100%;
       background-position: top center;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
       transition: 0.2s;
       cursor: pointer;
       filter: brightness(0.75);
 
       &:hover {
-        opacity: 1;
         background-size: 110%;
         filter: brightness(1);
       }
@@ -87,6 +87,74 @@
       &:hover {
         color: var(--white);
         background-color: black;
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 100%;
+
+    .interactiveVRBox {
+      img {
+        margin-left: -22.5rem;
+        margin-top: 8.8rem;
+        width: 52%;
+      }
+
+      .textBox {
+        width: 25rem;
+        position: absolute;
+        right: 4.8rem;
+        bottom: -42rem;
+        background-color: var(--white);
+        padding: 5.5rem;
+        width: 37rem;
+
+        h2 {
+          text-align: left;
+          font-size: 2.8rem;
+        }
+
+        p {
+          padding: 0;
+          text-align: left;
+          color: var(--darkGray);
+        }
+      }
+    }
+
+    .ourCreations {
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 15rem 9.5rem 10.5rem 9.5rem;
+      height: auto;
+      gap: 1.5rem;
+      position: relative;
+
+      h2 {
+        position: absolute;
+        top: 9rem;
+        font-size: 2.8rem;
+        left: 9.5rem;
+      }
+
+      button {
+        top: 7rem;
+        right: 10rem;
+        position: absolute;
+      }
+
+      .creationBox {
+        width: 15.05rem;
+        height: 26rem;
+        padding: 2.2rem;
+
+        p {
+          font-size: 1.8rem;
+          width: 9.5rem;
+          line-height: 1.8rem;
+        }
       }
     }
   }
