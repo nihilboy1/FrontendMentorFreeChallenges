@@ -133,7 +133,6 @@ main #header_orange_div nav ul li a {
 }
 main #header_orange_div nav ul li a:hover {
   text-transform: uppercase;
-  font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
   font-size: 0.8rem;
 }

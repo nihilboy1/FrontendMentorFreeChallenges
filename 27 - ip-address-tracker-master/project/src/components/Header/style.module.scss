@@ -1,0 +1,55 @@
+.header {
+  background-image: url('../../../public/images/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 16.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 1.95rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 1.8rem;
+    margin-bottom: 1.7rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+    height: 3.2rem;
+    border-radius: 12px;
+
+    input {
+      height: 100%;
+      width: 90%;
+      border-bottom-left-radius: 12px;
+      border-top-left-radius: 12px;
+      padding-left: 2rem;
+      caret-color: var(--darkGray);
+      color: var(--veryDarkGray);
+      font-size: 1.1rem;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+      width: 10%;
+      background-color: var(--veryDarkGray);
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+      &:hover {
+        filter: brightness(1.5);
+      }
+    }
+  }
+}
