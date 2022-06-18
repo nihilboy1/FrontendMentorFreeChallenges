@@ -103,7 +103,7 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const res = await ApiGeolocation.get(
-    'country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J'
+    'country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J&ipAddress='
   )
 
   const userGeolocApiSpecificInfos = {
