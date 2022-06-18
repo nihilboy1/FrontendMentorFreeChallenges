@@ -46,7 +46,6 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
       const res = await ApiGeolocation.get(
         `https://geo.ipify.org/api/v2/country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J&ipAddress=${ipOrURL}`
       )
-      console.log(res.data)
 
       const fetchGeolocApiSpecificInfos = {
         ip: res.data.ip,
@@ -106,7 +105,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const res = await ApiGeolocation.get(
     'country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J'
   )
-  console.log(res.data)
 
   const userGeolocApiSpecificInfos = {
     ip: res.data.ip,
