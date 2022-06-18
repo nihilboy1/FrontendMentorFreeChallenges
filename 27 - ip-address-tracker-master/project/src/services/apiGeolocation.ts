@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const ApiGeolocation = axios.create({
-  baseURL: `http://ip-api.com/json/`
+  baseURL: `https://geo.ipify.org/api/v2/`
 })

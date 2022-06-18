@@ -27,7 +27,7 @@ export function InfosBar({ allSpecificData }: InfosBarProps) {
       </section>
       <section>
         <h2>TIMEZONE</h2>
-        <p>{allSpecificData.timezone}</p>
+        <p>UTC {allSpecificData.timezone}</p>
       </section>
       <section className={S.noBorder}>
         <h2>ISP</h2>

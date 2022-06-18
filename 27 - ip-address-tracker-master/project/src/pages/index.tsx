@@ -42,19 +42,22 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
     useState<userGeolocApiSpecificInfosProps>(userGeolocApiSpecificInfos)
 
   async function setMapPosition(ipOrURL: string) {
-    const res = await ApiGeolocation.get(`${ipOrURL}`)
+    try {
+      const res = await ApiGeolocation.get(
+        `https://geo.ipify.org/api/v2/country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J&ipAddress=${ipOrURL}`
+      )
+      console.log(res.data)
 
-    if (res.data.lat && res.data.lon) {
       const fetchGeolocApiSpecificInfos = {
-        ip: res.data.query,
+        ip: res.data.ip,
         location: {
-          city: res.data.city,
-          state_prov: res.data.regionName
+          city: res.data.location.city,
+          state_prov: res.data.location.region
         },
-        timezone: res.data.timezone,
+        timezone: res.data.location.timezone,
         isp: res.data.isp,
-        lat: res.data.lat,
-        lon: res.data.lon
+        lat: res.data.location.lat,
+        lon: res.data.location.lng
       }
 
       const fetchPosition = [
@@ -64,7 +67,7 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
 
       setAllSpecificData(fetchGeolocApiSpecificInfos)
       setMapCoordinates(fetchPosition)
-    } else {
+    } catch {
       toast.error('Essa Consulta Não Retornou Dados Válidos')
       setAddressInput('')
     }
@@ -100,18 +103,21 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await ApiGeolocation.get('')
+  const res = await ApiGeolocation.get(
+    'country,city?apiKey=at_2y5n6qpPF7LlowoSVMesNBQP7iH3J'
+  )
+  console.log(res.data)
 
   const userGeolocApiSpecificInfos = {
-    ip: res.data.query,
+    ip: res.data.ip,
     location: {
-      city: res.data.city,
-      state_prov: res.data.regionName
+      city: res.data.location.city,
+      state_prov: res.data.location.region
     },
-    timezone: res.data.timezone,
+    timezone: res.data.location.timezone,
     isp: res.data.isp,
-    lat: res.data.lat,
-    lon: res.data.lon
+    lat: res.data.location.lat,
+    lon: res.data.location.lng
   }
 
   return {
