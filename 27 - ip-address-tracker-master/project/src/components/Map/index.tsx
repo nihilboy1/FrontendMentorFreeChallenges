@@ -11,8 +11,8 @@ const Map = ({ mapCoordinates }) => {
     <div className={S.mapContainer}>
       <MapContainer
         center={mapCoordinates}
-        zoom={10}
-        scrollWheelZoom={true}
+        zoom={9}
+        scrollWheelZoom={false}
         style={{ width: '100%', height: '100%' }}
       >
         <TileLayer

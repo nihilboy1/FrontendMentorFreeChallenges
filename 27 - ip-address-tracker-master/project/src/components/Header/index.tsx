@@ -4,11 +4,11 @@ import S from './style.module.scss'
 
 interface HeaderProps {
   setMapPosition: (value: string) => void
+  setAddressInput: (value: string) => void
+  addressInput: string
 }
 
-export function Header({ setMapPosition }) {
-  const [addressInput, setAddressInput] = useState('')
-
+export function Header({ setMapPosition, addressInput, setAddressInput }) {
   function handleNewAddressChange(e: ChangeEvent<HTMLInputElement>) {
     setAddressInput(e.target.value)
   }
