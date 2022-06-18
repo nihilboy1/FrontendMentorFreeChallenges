@@ -1,24 +1,25 @@
 .infosBarBox {
   display: flex;
   justify-content: space-between;
-  width: 78%;
+  max-width: 85%;
   padding: 2rem 0rem;
   height: 9.5rem;
-  margin-top: -5rem;
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+  position: absolute;
+  top: 9rem;
+  z-index: 999;
 
   .noBorder {
     border: none;
   }
 
   section {
-    min-width: 20%;
+    min-width: 15rem;
     margin-left: 1.5rem;
     border-right: 1px solid var(--darkGray);
     border-radius: 0.5rem;
-
 
     h2 {
       font-size: 0.8rem;
@@ -31,10 +32,9 @@
     p {
       font-size: 1.5rem;
       font-weight: 500;
-      width: auto;
+      width: 105%;
       color: var(--veryDarkGray);
+      margin-right: 1rem;
     }
   }
-
-
 }

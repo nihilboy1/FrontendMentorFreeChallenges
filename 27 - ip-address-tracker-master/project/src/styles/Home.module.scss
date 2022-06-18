@@ -1,7 +1,11 @@
-.mainBox{
+.mainBox {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .mainBox > * {
+    border: 1px solid black;
+  }
 }

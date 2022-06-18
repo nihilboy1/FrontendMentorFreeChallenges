@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const ipGeolocation = axios.create({
-  baseURL: `https://api.ipgeolocation.io/`
+  baseURL: `http://ip-api.com/json/`
 })

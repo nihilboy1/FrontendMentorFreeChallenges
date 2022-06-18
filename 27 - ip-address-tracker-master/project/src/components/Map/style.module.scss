@@ -1,6 +1,8 @@
-.mapBox{
+.mapContainer{
   width: 100%;
-  height: 25rem;
-  z-index: -1;
+  height: 31rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -4.5rem;
 }
