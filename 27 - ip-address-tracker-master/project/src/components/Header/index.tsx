@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent } from 'react'
 import { AiOutlineRight } from 'react-icons/ai'
 import S from './style.module.scss'
 
