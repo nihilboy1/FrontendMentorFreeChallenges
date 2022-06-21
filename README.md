@@ -1,7 +1,7 @@
 # ALL-FREE-FRONT-END-MENTOR-CHALLENGES
 Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor.io/home para praticar a aprimorar minha técnica.
 
-🔎| Visualize
+## 🔎 | Visualize
 Visualize os projetos em ordem de criação:
 
 - Desafio 1: https://interactiveratingcomponent1.netlify.app/
@@ -33,22 +33,24 @@ Visualize os projetos em ordem de criação:
 - Desafio 26: https://loopstudios-landing-page-26.netlify.app/
 - Desafio 27: Em breve...
 
-🛸| Tecnologias
+## 🛸| Tecnologias
 Na construção desses projetos, foram utilizadas as seguintes linguagens, libs e frameworks
 
-HTML
-CSS / SASS / SCSS
-JavaScript / Typescript
-React.js
-Next.js
-Axios
-StyledComponents
-Material UI
-Headless UI
+- [HTML]
+- [CSS ]
+- [SASS / SCSS]
+- [JavaScript]
+- [Typescript]
+- [React.js]
+- [Next.js]
+- [Axios]
+- [StyledComponents]
+- [Material UI]
+- [Headless UI]
 
 
 👥| Autor(es)
 Autores e colaboradores do projeto:
 
-Samuel Seve
+- [Samuel Seve](https://github.com/nihilboy1)
 
