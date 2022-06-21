@@ -1,4 +1,4 @@
-# DESAFIOS DO FRONTEND-MENTOR
+# FRONTEND-MENTOR CHALLENGES 🖖
 Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor.io/home para praticar a aprimorar minha técnica.
 
 ## 🔎 | Visualize
