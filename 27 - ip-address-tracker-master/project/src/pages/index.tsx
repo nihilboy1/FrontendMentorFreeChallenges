@@ -68,7 +68,7 @@ export default function Home({ userGeolocApiSpecificInfos }: HomeProps) {
       setAllSpecificData(fetchGeolocApiSpecificInfos)
       setMapCoordinates(fetchPosition)
     } catch {
-      toast.error('Essa Consulta Não Retornou Dados Válidos')
+      toast.error('This query did not return valid data')
       setAddressInput('')
     }
   }
