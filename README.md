@@ -3,7 +3,6 @@ Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor
 
 ## 🔎 | Visualize
 Visualize os projetos em ordem de criação:
-
 - Desafio 1: https://interactiveratingcomponent1.netlify.app/
 - Desafio 2: https://qrcodecomponent2.netlify.app/
 - Desafio 3: https://nftpreviewcardcomponent3.netlify.app/
@@ -35,7 +34,6 @@ Visualize os projetos em ordem de criação:
 
 ## 🛸 | Tecnologias
 Na construção desses projetos, foram utilizadas as seguintes linguagens, libs e frameworks
-
 - HTML
 - CSS 
 - SASS / SCSS
@@ -47,10 +45,9 @@ Na construção desses projetos, foram utilizadas as seguintes linguagens, libs 
 - StyledComponents
 - Material UI
 - Headless UI
-
+- Vite
 
 👥 | Autor(es)
 Autores e colaboradores do projeto:
-
 - [Samuel Seve](https://github.com/nihilboy1)
 
