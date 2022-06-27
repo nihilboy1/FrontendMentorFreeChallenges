@@ -2,7 +2,7 @@
 <h3>
   A meta é concluir TODOS os desafios grátis do
   <a href=" https://www.frontendmentor.io/home">Frontend-mentor</a> para
-  praticar a aprimorar minha técnica.
+  praticar e aprimorar minha técnica.
 </h3>
 
 <h1>🔎 | Vizualização do ultimo projeto</h1>
