@@ -5,10 +5,10 @@
   praticar e aprimorar minha técnica.
 </h3>
 
-<h1>🔎 | Vizualização do ultimo projeto</h1>
+<h1>🔎 | Vizualização do ultimo projeto:</h1>
 <img src="https://i.imgur.com/tZCBpqk.png" alt="Foto da aplicação" />
 
-<h1>👾 | Deploy</h1>
+<h1>👾 | Deploys:</h1>
 <ol>
   <li>
     <a href="https://interactiveratingcomponent1.netlify.app/"
@@ -146,7 +146,7 @@
   </li>
 </ol>
 
-<h1>🛸 | Tecnologias</h1>
+<h1>🛸 | Tecnologias:</h1>
 <p>
   Na construção desses projetos, foram utilizadas as seguintes linguagens, libs
   e frameworks:
@@ -166,6 +166,6 @@
   <li>Headless UI</li>
 </ul>
 
-<h1>👥 | Autor(es)</h1>
+<h1>👥 | Autor(es):</h1>
 <p>Autores e colaboradores do projeto:</p>
 <a href="https://github.com/nihilboy1">Samuel Seve</a>
