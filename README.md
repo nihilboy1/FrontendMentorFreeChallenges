@@ -159,7 +159,6 @@
   <li>Next.js</li>
   <li>React Router Dom</li>
   <li>Chakra UI</li>
-  <li>Swipper</li>
   <li>Vite</li>
   <li>Axios</li>
   <li>Styled-Components</li>
