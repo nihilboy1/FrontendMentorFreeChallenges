@@ -137,11 +137,6 @@
     >
   </li>
   <li>
-    <a href="https://ip-address-tracker-master-27.vercel.app/"
-      >IP Address Tracker</a
-    >
-  </li>
-  <li>
     Em Breve...
   </li>
 </ol>
