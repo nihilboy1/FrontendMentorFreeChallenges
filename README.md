@@ -1,10 +1,8 @@
 <h1>FRONTEND-MENTOR CHALLENGES 🤘</h1>
 <h3>
   A meta é concluir todos os desafios grátis do
-  <a target="_blank" href=" https://www.frontendmentor.io/home"
-    >Frontend-mentor</a
-  >
-  para praticar a aprimorar minha técnica.
+  <a href=" https://www.frontendmentor.io/home">Frontend-mentor</a> para
+  praticar a aprimorar minha técnica.
 </h3>
 
 <h1>🔎 | Vizualização do ultimo projeto</h1>
@@ -13,15 +11,12 @@
 <h1>👾 | Deploy</h1>
 <ol>
   <li>
-    <a target="_blank" href="https://interactiveratingcomponent1.netlify.app/"
+    <a href="https://interactiveratingcomponent1.netlify.app/"
       >Interactive Rating Component</a
     >
   </li>
-  target="_blank"
   <li>
-    <a target="_blank" href="https://qrcodecomponent2.netlify.app/"
-      >QR Code Component</a
-    >
+    <a href="https://qrcodecomponent2.netlify.app/">QR Code Component</a>
   </li>
   <li>
     <a href="https://nftpreviewcardcomponent3.netlify.app/"
@@ -29,141 +24,125 @@
     >
   </li>
   <li>
-    <a target="_blank" href="https://ordersummarycomponent4.netlify.app/"
+    <a href="https://ordersummarycomponent4.netlify.app/"
       >Order Summary Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://statspreviewcardcomponent5.netlify.app/"
+    <a href="https://statspreviewcardcomponent5.netlify.app/"
       >Stats Preview Card Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://3columnpreviewcardcomponent6.netlify.app/"
+    <a href="https://3columnpreviewcardcomponent6.netlify.app/"
       >Three Column Preview Card Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://profilecardcomponent7.netlify.app/"
+    <a href="https://profilecardcomponent7.netlify.app/"
       >Profile Card Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://faqaccordioncard8.netlify.app/"
-      >FAQ Accordion Card</a
-    >
+    <a href="https://faqaccordioncard8.netlify.app/">FAQ Accordion Card</a>
   </li>
   <li>
-    <a target="_blank" href="https://socialproofsection9.netlify.app/"
-      >Social Proof Section</a
-    >
+    <a href="https://socialproofsection9.netlify.app/">Social Proof Section</a>
   </li>
   <li>
-    <a
-      target="_blank"
-      href="https://articlepreviewcomponentmaster10.netlify.app/"
+    <a href="https://articlepreviewcomponentmaster10.netlify.app/"
       >Article Preview Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://myfourcardfeaturesection11.netlify.app/"
+    <a href="https://myfourcardfeaturesection11.netlify.app/"
       >Four Card Feature Section</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://baseapparelcomingsoon12.netlify.app/"
+    <a href="https://baseapparelcomingsoon12.netlify.app/"
       >Base Apparel Coming Soon</a
     >
   </li>
   <li>
-    <a
-      target="_blank"
-      href="https://intro-component-with-signup-form13.netlify.app/"
+    <a href="https://intro-component-with-signup-form13.netlify.app/"
       >Intro Component With Signup Form</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://singlepricegridcomponent14.netlify.app/"
+    <a href="https://singlepricegridcomponent14.netlify.app/"
       >Single Price Grid Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://ping-coming-soon-page15.netlify.app/"
+    <a href="https://ping-coming-soon-page15.netlify.app/"
       >Ping Coming Soon Page</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://huddle-landing-page-16.netlify.app/"
+    <a href="https://huddle-landing-page-16.netlify.app/"
       >Huddle Landing Page</a
     >
   </li>
   <li>
-    <a
-      target="_blank"
-      href="https://intro-section-with-dropdown-navigation17.netlify.app/"
+    <a href="https://intro-section-with-dropdown-navigation17.netlify.app/"
       >Intro Section With Dropdown Navigation</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://advice-generator-app18.netlify.app/"
+    <a href="https://advice-generator-app18.netlify.app/"
       >Advice Generator App</a
     >
   </li>
   <li>
-    <a
-      target="_blank"
-      href="https://time-tracking-dashboard-main19.netlify.app/"
+    <a href="https://time-tracking-dashboard-main19.netlify.app/"
       >Time Tracking Dashboard</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://tip-calculator-app20.netlify.app/"
-      >Tip Calculator App</a
-    >
+    <a href="https://tip-calculator-app20.netlify.app/">Tip Calculator App</a>
   </li>
   <li>
-    target="_blank"
-    <a
-      target="_blank"
-      href="https://sunnyside-agency-landing-page21.netlify.app/"
+    <a href="https://sunnyside-agency-landing-page21.netlify.app/"
       >Sunnyside Agency Landing Page</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://blogr-landing-page22.netlify.app/"
-      >Blogr Landing Page</a
-    >
+    <a href="https://blogr-landing-page22.netlify.app/">Blogr Landing Page</a>
   </li>
   <h3>👇 👇 👇 PÓS NLW 👇 👇 👇</h3>
   <li>
-    <a target="_blank" href="https://crowdfunding-product-page-23.netlify.app/"
+    <a href="https://crowdfunding-product-page-23.netlify.app/"
       >Crowdfunding Product Page</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://expenses-chart-component-24.netlify.app/"
+    <a href="https://expenses-chart-component-24.netlify.app/"
       >Expenses Chart Component</a
     >
   </li>
   <li>
-    <a
-      target="_blank"
-      href="https://interactive-pricing-component-25.netlify.app/"
+    <a href="https://interactive-pricing-component-25.netlify.app/"
       >Interactive Pricing Component</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://loopstudios-landing-page-26.netlify.app/"
+    <a href="https://loopstudios-landing-page-26.netlify.app/"
       >Loopstudios Landing Page</a
     >
   </li>
   <li>
-    <a target="_blank" href="https://ip-address-tracker-master-27.vercel.app/"
+    <a href="https://ip-address-tracker-master-27.vercel.app/"
       >IP Address Tracker</a
     >
   </li>
   <li>
-    <a target="_blank" href="#">Em breve...</a>
+    <a href="https://ip-address-tracker-master-27.vercel.app/"
+      >IP Address Tracker</a
+    >
+  </li>
+  <li>
+    <a href="#">Em Breve...</a>
   </li>
 </ol>
 
@@ -190,4 +169,4 @@
 
 <h1>👥 | Autor(es)</h1>
 <p>Autores e colaboradores do projeto:</p>
-<a target="_blank" href="https://github.com/nihilboy1">Samuel Seve</a>
+<a href="https://github.com/nihilboy1">Samuel Seve</a>
