@@ -1,4 +1,4 @@
-<h1>FRONTEND-MENTOR CHALLENGES 🤘</h1>
+<h1>🚀 | FRONTEND-MENTOR CHALLENGES</h1>
 <h3>
   A meta é concluir TODOS os desafios grátis do
   <a href=" https://www.frontendmentor.io/home">Frontend-mentor</a> para
