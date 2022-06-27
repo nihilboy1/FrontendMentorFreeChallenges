@@ -1,53 +1,169 @@
-# FRONTEND-MENTOR CHALLENGES 🖖
-Defini um objetivo: Vou concluir todos os desafios do https://www.frontendmentor.io/home para praticar a aprimorar minha técnica.
+<h1>FRONTEND-MENTOR CHALLENGES 🤘</h1>
+<h3>
+  A meta é concluir todos os desafios grátis do
+  <a href=" https://www.frontendmentor.io/home">Frontend-mentor</a> para
+  praticar a aprimorar minha técnica.
+</h3>
 
-## 🔎 | Visualize
-Visualize os projetos em ordem de criação:
-- Desafio 1: https://interactiveratingcomponent1.netlify.app/
-- Desafio 2: https://qrcodecomponent2.netlify.app/
-- Desafio 3: https://nftpreviewcardcomponent3.netlify.app/
-- Desafio 4: https://ordersummarycomponent4.netlify.app/
-- Desafio 5: https://statspreviewcardcomponent5.netlify.app/
-- Desafio 6: https://3columnpreviewcardcomponent6.netlify.app/
-- Desafio 7: https://profilecardcomponent7.netlify.app/
-- Desafio 8: https://faqaccordioncard8.netlify.app/
-- Desafio 9: https://socialproofsection9.netlify.app/
-- Desafio 10: https://articlepreviewcomponentmaster10.netlify.app/
-- Desafio 11: https://myfourcardfeaturesection11.netlify.app/
-- Desafio 12: https://baseapparelcomingsoon12.netlify.app/
-- Desafio 13: https://intro-component-with-signup-form13.netlify.app/
-- Desafio 14: https://singlepricegridcomponent14.netlify.app/
-- Desafio 15: https://ping-coming-soon-page15.netlify.app/
-- Desafio 16: https://huddle-landing-page-16.netlify.app/
-- Desafio 17: https://intro-section-with-dropdown-navigation17.netlify.app/
-- Desafio 18: https://advice-generator-app18.netlify.app/
-- Desafio 19: https://time-tracking-dashboard-main19.netlify.app/
-- Desafio 20: https://tip-calculator-app20.netlify.app/
-- Desafio 21: https://sunnyside-agency-landing-page21.netlify.app/
-- Desafio 22: https://blogr-landing-page22.netlify.app/
-- PÓS NLW
-- Desafio 23: https://crowdfunding-product-page-23.netlify.app/
-- Desafio 24: https://expenses-chart-component-24.netlify.app/
-- Desafio 25: https://interactive-pricing-component-25.netlify.app/
-- Desafio 26: https://loopstudios-landing-page-26.netlify.app/
-- Desafio 27: Em breve...
+<h1>🔎 | Vizualização do ultimo projeto</h1>
+<img src="https://i.imgur.com/tZCBpqk.png" alt="Foto da aplicação" />
 
-## 🛸 | Tecnologias
-Na construção desses projetos, foram utilizadas as seguintes linguagens, libs e frameworks
-- HTML
-- CSS 
-- SASS / SCSS
-- JavaScript
-- Typescript
-- React.js
-- Next.js
-- Axios
-- StyledComponents
-- Material UI
-- Headless UI
-- Vite
+<h1>👾 | Deploy</h1>
+<ol>
+  <li>
+    <a href="https://interactiveratingcomponent1.netlify.app/"
+      >Interactive Rating Component</a
+    >
+  </li>
+  <li>
+    <a href="https://qrcodecomponent2.netlify.app/">QR Code Component</a>
+  </li>
+  <li>
+    <a href="https://nftpreviewcardcomponent3.netlify.app/"
+      >NFT Preview Card Component</a
+    >
+  </li>
+  <li>
+    <a href="https://ordersummarycomponent4.netlify.app/"
+      >Order Summary Component</a
+    >
+  </li>
+  <li>
+    <a href="https://statspreviewcardcomponent5.netlify.app/"
+      >Stats Preview Card Component</a
+    >
+  </li>
+  <li>
+    <a href="https://3columnpreviewcardcomponent6.netlify.app/"
+      >Three Column Preview Card Component</a
+    >
+  </li>
+  <li>
+    <a href="https://profilecardcomponent7.netlify.app/"
+      >Profile Card Component</a
+    >
+  </li>
+  <li>
+    <a href="https://faqaccordioncard8.netlify.app/">FAQ Accordion Card</a>
+  </li>
+  <li>
+    <a href="https://socialproofsection9.netlify.app/">Social Proof Section</a>
+  </li>
+  <li>
+    <a href="https://articlepreviewcomponentmaster10.netlify.app/"
+      >Article Preview Component</a
+    >
+  </li>
+  <li>
+    <a href="https://myfourcardfeaturesection11.netlify.app/"
+      >Four Card Feature Section</a
+    >
+  </li>
+  <li>
+    <a href="https://baseapparelcomingsoon12.netlify.app/"
+      >Base Apparel Coming Soon</a
+    >
+  </li>
+  <li>
+    <a href="https://intro-component-with-signup-form13.netlify.app/"
+      >Intro Component With Signup Form</a
+    >
+  </li>
+  <li>
+    <a href="https://singlepricegridcomponent14.netlify.app/"
+      >Single Price Grid Component</a
+    >
+  </li>
+  <li>
+    <a href="https://ping-coming-soon-page15.netlify.app/"
+      >Ping Coming Soon Page</a
+    >
+  </li>
+  <li>
+    <a href="https://huddle-landing-page-16.netlify.app/"
+      >Huddle Landing Page</a
+    >
+  </li>
+  <li>
+    <a href="https://intro-section-with-dropdown-navigation17.netlify.app/"
+      >Intro Section With Dropdown Navigation</a
+    >
+  </li>
+  <li>
+    <a href="https://advice-generator-app18.netlify.app/"
+      >Advice Generator App</a
+    >
+  </li>
+  <li>
+    <a href="https://time-tracking-dashboard-main19.netlify.app/"
+      >Time Tracking Dashboard</a
+    >
+  </li>
+  <li>
+    <a href="https://tip-calculator-app20.netlify.app/">Tip Calculator App</a>
+  </li>
+  <li>
+    <a href="https://sunnyside-agency-landing-page21.netlify.app/"
+      >Sunnyside Agency Landing Page</a
+    >
+  </li>
+  <li>
+    <a href="https://blogr-landing-page22.netlify.app/">Blogr Landing Page</a>
+  </li>
+  <h3>👇 👇 👇 PÓS NLW 👇 👇 👇</h3>
+  <li>
+    <a href="https://crowdfunding-product-page-23.netlify.app/"
+      >Crowdfunding Product Page</a
+    >
+  </li>
+  <li>
+    <a href="https://expenses-chart-component-24.netlify.app/"
+      >Expenses Chart Component</a
+    >
+  </li>
+  <li>
+    <a href="https://interactive-pricing-component-25.netlify.app/"
+      >Interactive Pricing Component</a
+    >
+  </li>
+  <li>
+    <a href="https://loopstudios-landing-page-26.netlify.app/"
+      >Loopstudios Landing Page</a
+    >
+  </li>
+  <li>
+    <a href="https://ip-address-tracker-master-27.vercel.app/"
+      >IP Address Tracker</a
+    >
+  </li>
+  <li>
+    <a href="#"
+      >Em breve...</a
+    >
+  </li>
+</ol>
 
-👥 | Autor(es)
-Autores e colaboradores do projeto:
-- [Samuel Seve](https://github.com/nihilboy1)
+<h1>🛸 | Tecnologias</h1>
+<p>
+  Na construção desses projetos, foram utilizadas as seguintes linguagens, libs
+  e frameworks:
+</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS / SCSS</li>
+  <li>Typescript</li>
+  <li>React</li>
+  <li>Next.js</li>
+  <li>React Router Dom</li>
+  <li>Chakra UI</li>
+  <li>Swipper</li>
+  <li>Vite</li>
+  <li>Axios</li>
+  <li>Styled-Components</li>
+  <li>Material UI</li>
+  <li>Headless UI</li>
+</ul>
 
+<h1>👥 | Autor(es)</h1>
+<p>Autores e colaboradores do projeto:</p>
+<a href="https://github.com/nihilboy1">Samuel Seve</a>
