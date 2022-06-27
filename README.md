@@ -5,7 +5,7 @@
   praticar a aprimorar minha técnica.
 </h3>
 
-<h1>🔎 | Vizualização do ultimo projeto</h1>
+<h1>🔎 | Um dos ultimos projetos</h1>
 <img src="https://i.imgur.com/tZCBpqk.png" alt="Foto da aplicação" />
 
 <h1>👾 | Deploy</h1>
