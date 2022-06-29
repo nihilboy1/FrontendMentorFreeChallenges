@@ -8,7 +8,7 @@
 <h1>🔎 | Vizualização do ultimo projeto:</h1>
 <img src="https://i.imgur.com/tZCBpqk.png" alt="Foto da aplicação" />
 
-<h1>👾 | Deploys:</h1>
+<h1>👾 | Visite algum dos Deploys :)</h1>
 <ol>
   <li>
     <a href="https://interactiveratingcomponent1.netlify.app/"
