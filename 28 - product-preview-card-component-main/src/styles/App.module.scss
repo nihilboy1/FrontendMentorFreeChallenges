@@ -1,0 +1,102 @@
+.main_box {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 0.8rem;
+  display: flex;
+  overflow: hidden;
+
+  img {
+    width: 50%;
+  }
+
+  .text_box {
+    padding: 1.7rem;
+    background-color: var(--white_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .perfume {
+      font-family: var(--montserrat_font);
+      font-size: 0.8rem;
+      letter-spacing: 0.2rem;
+      color: var(--darkgrayishblue_color);
+    }
+
+    .title {
+      font-size: 2.2rem;
+      line-height: 2.3rem;
+      font-family: var(--fraunces_font);
+      color: var(--verydarkblue_color);
+      margin-top: 1.5rem;
+    }
+
+    .main_text {
+      line-height: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--darkgrayishblue_color);
+      font-family: var(--montserrat_font);
+    }
+  }
+
+  .prices_box {
+    display: flex;
+    align-items: center;
+
+    .main_price {
+      font-size: 2rem;
+      font-family: var(--fraunces_font);
+      color: var(--darkcyan_color);
+      margin-right: 0.8rem;
+    }
+
+    .other_price {
+      font-family: var(--montserrat_font);
+      font-size: 0.9rem;
+      color: var(--darkgrayishblue_color);
+      text-decoration: line-through;
+    }
+  }
+
+  button {
+    border-radius: 0.8rem;
+    padding: 0.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkcyan_color);
+    color: white;
+    gap: 0.5rem;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      box-shadow: -5px -5px 10px #b3b3b3, 5px 5px 10px #ffffff;
+    }
+    span {
+      font-size: 0.9rem;
+      font-weight: bold;
+      font-family: var(--montserrat_font);
+    }
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+
+    width: 23.5rem;
+    height: 40.5rem;
+
+    img {
+      width: 100%;
+    }
+
+    .text_box {
+      height: 100%;
+
+      .title {
+        margin-top: 0.2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
