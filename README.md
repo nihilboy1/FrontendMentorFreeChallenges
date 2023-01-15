@@ -110,7 +110,7 @@
   <li>
     <a href="https://blogr-landing-page22.netlify.app/">Blogr Landing Page</a>
   </li>
-  <h3>👇 👇 👇 PÓS NLW 👇 👇 👇</h3>
+  <h3>👇 👇 👇 PÓS ROCKETSEAT 👇 👇 👇</h3>
   <li>
     <a href="https://crowdfunding-product-page-23.netlify.app/"
       >Crowdfunding Product Page</a
