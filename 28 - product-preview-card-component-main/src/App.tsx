@@ -1,11 +1,11 @@
-import { useMediaQuery } from '@chakra-ui/react'
-import { ShoppingCart } from 'phosphor-react'
-import desktopImage from '../public/image-product-desktop.jpg'
-import mobileImage from '../public/image-product-mobile.jpg'
-import S from './styles/App.module.scss'
+import { useMediaQuery } from "@chakra-ui/react";
+import { ShoppingCart } from "phosphor-react";
+import desktopImage from "./assets/image-product-desktop.jpg";
+import mobileImage from "./assets/image-product-mobile.jpg";
+import S from "./styles/App.module.scss";
 
 function App() {
-  const [isShorterThan550] = useMediaQuery('(max-width: 550px)')
+  const [isShorterThan550] = useMediaQuery("(max-width: 550px)");
 
   return (
     <main className={S.main_box}>
@@ -24,12 +24,12 @@ function App() {
           <p className={S.other_price}>$169.99</p>
         </div>
         <button>
-          <ShoppingCart weight="bold" size={18} color="white" />
+          <ShoppingCart weight="bold" size={18} />
           <span>Add to Cart</span>
         </button>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

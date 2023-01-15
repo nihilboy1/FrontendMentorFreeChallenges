@@ -65,13 +65,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--darkcyan_color);
-    color: white;
+
     gap: 0.5rem;
-    opacity: 0.8;
+    opacity: 1;
+    border: 1px solid var(--darkcyan_color);
+    color: var(--darkcyan_color);
+    background-color: white;
+
     &:hover {
-      opacity: 1;
-      box-shadow: -5px -5px 10px #b3b3b3, 5px 5px 10px #ffffff;
+      background-color: var(--darkcyan_color);
+      color: white;
     }
     span {
       font-size: 0.9rem;
