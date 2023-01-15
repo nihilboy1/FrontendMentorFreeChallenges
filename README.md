@@ -136,6 +136,11 @@
     >
   </li>
   <li>
+    <a href="https://product-preview-card-component-28.netlify.app/"
+      >Product Preview Card Component</a
+    >
+  </li>
+  <li>
     Em Breve...
   </li>
 </ol>
