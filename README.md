@@ -141,6 +141,11 @@
     >
   </li>
   <li>
+    <a href="https://coding-bootcamp-testimonials-slide-29.netlify.app/"
+      >Coding Bootcamp Testimonials Slide</a
+    >
+  </li>
+  <li>
     Em Breve...
   </li>
 </ol>
@@ -161,6 +166,7 @@
   <li>Vite</li>
   <li>Axios</li>
   <li>Styled-Components</li>
+  <li>Tailwind css</li>
   <li>Material UI</li>
   <li>Headless UI</li>
 </ul>
