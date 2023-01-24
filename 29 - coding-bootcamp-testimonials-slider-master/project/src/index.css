@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+}
+
+main {
+  @apply bg-white lg:min-h-[80rem] min-h-screen min-w-full;
+}
