@@ -11,41 +11,52 @@ interface SummaryItemProps {
 
 export function SummaryItem({ label, pontuation }: SummaryItemProps) {
   const [icon, setIcon] = useState("");
-  const [color, setColor] = useState("");
   useEffect(() => {
     if (label === "Reaction") {
       setIcon(iconReaction);
-      setColor("lightRed");
     } else if (label === "Memory") {
       setIcon(iconMemory);
-      setColor("orangeyYellow");
     } else if (label === "Verbal") {
       setIcon(iconVerbal);
-      setColor("greenTeal");
     } else if (label === "Visual") {
       setIcon(iconVisual);
-      setColor("cobaltBlue");
     }
   }, []);
   return (
     <article
-      className={`flex items-center justify-between bg-opacity-10 ${
-        "bg-" + color
+      className={`flex items-center justify-between bg-opacity-5 ${
+        label === "Visual"
+          ? "bg-cobaltBlue"
+          : label === "Reaction"
+          ? "bg-lightRed"
+          : label === "Memory"
+          ? "bg-orangeyYellow"
+          : label === "Verbal"
+          ? "bg-greenTeal"
+          : ""
       }  p-4 rounded-lg mt-2`}
     >
       <div className="flex items-center h-5 gap-2">
         <img src={icon} alt="memory icon" />
         <span
-          className={`font-hankenGrotesk text-lg ${
-            label === "Memory" ? "text-orangeyYellow" : ""
+          className={`font-hankenGrotesk text-lg  ${
+            label === "Visual"
+              ? "text-cobaltBlue"
+              : label === "Reaction"
+              ? "text-lightRed"
+              : label === "Memory"
+              ? "text-orangeyYellow"
+              : label === "Verbal"
+              ? "text-greenTeal"
+              : ""
           }`}
         >
           {label}
         </span>
       </div>
       <div>
-        <span>{pontuation}</span>
-        <span className="font-hankenGrotesk"> / 100</span>
+        <span className="font-hankenGrotesk font-bold">{pontuation}</span>
+        <span className="font-hankenGrotesk opacity-40"> / 100</span>
       </div>
     </article>
   );

@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="flex flex-col items-center py-4 justify-around h-[24rem] w-full rounded-b-3xl bg-gradient-to-b from-lightSlateBlue to-cobaltBlue">
+    <header className="flex flex-col items-center py-4 justify-around h-[24rem] w-full sm:w-[20rem] rounded-b-3xl sm:rounded-t-3xl bg-gradient-to-b from-lightSlateBlue to-cobaltBlue transition-all">
       <h1 className="text-center text-lightLavender font-black text-xl font-hankenGrotesk">
         Your Result
       </h1>
