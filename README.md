@@ -169,6 +169,7 @@
   <li>React Router Dom</li>
   <li>Chakra UI</li>
   <li>Vite</li>
+  <li>Phosphor Icons</li>
   <li>Axios</li>
   <li>Styled-Components</li>
   <li>Tailwind css</li>
