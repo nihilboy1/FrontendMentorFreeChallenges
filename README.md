@@ -6,7 +6,7 @@
 </h3>
 
 <h1>🔎 | Vizualização do ultimo projeto:</h1>
-<img src="https://i.imgur.com/tZCBpqk.png" alt="Foto da aplicação" />
+<img src="https://i.imgur.com/Eh8gHyW.png" />
 
 <h1>👾 | Visite algum dos Deploys :)</h1>
 <ol>
@@ -143,6 +143,11 @@
   <li>
     <a href="https://coding-bootcamp-testimonials-slide-29.netlify.app/"
       >Coding Bootcamp Testimonials Slide</a
+    >
+  </li>
+  <li>
+    <a href="https://main--symphonious-chaja-c0a4ec.netlify.app/"
+      >Summary Component</a
     >
   </li>
   <li>
