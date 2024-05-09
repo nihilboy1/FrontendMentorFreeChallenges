@@ -43,7 +43,7 @@ export default function App() {
     <main className="mx-auto sm:w-[28rem] bg-white rounded-xl  ">
       <div className="p-8">
         <img
-          src="src\assets\image-omelette.jpeg"
+          src="/images/image-omelette.jpeg"
           alt="omelette image"
           className="w-full rounded-2xl"
         />
