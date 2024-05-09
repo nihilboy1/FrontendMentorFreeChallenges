@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Outfit: ["Outfit"],
-        YoungSerif: ["YoungSerif"],
+        // quando eu fecho a aspa dupla, a fonte para de funcionar. Incompreensível.
+        Outfit: ['"Outfit'],
+        YoungSerif: ['"Young Serif"', '"serif"'],
       },
     },
   },
