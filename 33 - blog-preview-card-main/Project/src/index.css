@@ -1,0 +1,29 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  vertical-align: baseline;
+  list-style: none;
+  border: none;
+  font-family: "Figtree";
+  font-size: 16px;
+  color: transparent;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  display: flex;
+  background-color: #f5d04e;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
