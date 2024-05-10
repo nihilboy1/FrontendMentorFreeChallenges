@@ -1,0 +1,28 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  vertical-align: baseline;
+  list-style: none;
+  border: none;
+  font-family: "Inter";
+  font-size: 16px;
+  color: transparent;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
