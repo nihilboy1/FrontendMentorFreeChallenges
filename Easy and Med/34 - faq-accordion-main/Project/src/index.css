@@ -1,0 +1,30 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  vertical-align: baseline;
+  list-style: none;
+  border: none;
+  font-size: 16px;
+  font-family: "Work Sans";
+  color: black;
+  background-color: transparent;
+  transition: all 0.2s ease-out;
+}
+
+body {
+  background-color: #f9eeff;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
