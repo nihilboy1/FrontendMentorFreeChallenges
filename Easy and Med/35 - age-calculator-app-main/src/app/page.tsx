@@ -5,7 +5,7 @@ import { FormEvent, useRef, useState } from "react";
 import { DateText } from "./components/DateText";
 import Image from "next/image";
 
-interface DateError {
+export interface DateError {
   error: boolean;
   message: string;
 }
