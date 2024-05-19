@@ -6,7 +6,7 @@ export function DateText({
   time: "year" | "month" | "day";
 }) {
   return (
-    <p className="font-black text-[3.2rem] mt-[-1rem] italic">
+    <p className="font-black text-[3.2rem] mt-[-1rem] italic sm:text-[4rem]">
       <span className="text-violet-600">{number ? number : "- -"}</span> {time}
       {number ? number > 1 && "s" : ""}
     </p>
