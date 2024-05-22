@@ -123,7 +123,7 @@ export default function Home() {
           className={`mb-[1px] p-4 rounded-lg font-black tracking-widest text-lg text-black border focus:outline-none focus:border-2 ${
             genericError &&
             "border-red-500 focus:ring-red-500 hover:border-red-600"
-          } hover:border-violet-600 focus:ring-violet-600`}
+          } hover:border-violet-600 focus:border-violet-600 focus:ring-violet-600`}
           type="number"
           ref={ref}
         />
@@ -152,7 +152,7 @@ export default function Home() {
           <hr className="sm:w-[90%]" />
           <button
             type="submit"
-            className="bg-black hover:bg-violet-600 active:p-[0.8rem] focus:bg-violet-600 h-[4rem] w-[4rem] p-[1.1rem] rounded-full absolute translate-x-[-50%] translate-y-[-50%] left-[50%]  sm:left-[90%]"
+            className="bg-black  hover:bg-violet-600 active:p-[0.8rem] focus:bg-violet-600 focus:outline-violet-700 h-[4rem] w-[4rem] p-[1.1rem] rounded-full absolute translate-x-[-50%] translate-y-[-50%] left-[50%]  sm:left-[90%]"
           >
             <Image src={iconArrow} alt="arrow icon" className="w-full h-full" />
           </button>
