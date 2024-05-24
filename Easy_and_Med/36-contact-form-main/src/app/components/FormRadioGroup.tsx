@@ -16,7 +16,7 @@ export function FormRadioGroup({ name, options, label }: FormRadioGroupProps) {
   return (
     <>
       <label className="mb-2">{label}</label>
-      <div className="flex flex-col gap-4 mb-6 sm:flex-row border">
+      <div className="flex flex-col gap-4 mb-6 sm:flex-row">
         {options.map((option) => (
           <div
             key={option.value}
