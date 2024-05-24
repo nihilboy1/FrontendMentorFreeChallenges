@@ -24,7 +24,7 @@ export function FormTextarea({ name, label, placeholder }: FormTextareaProps) {
         rows={7}
         className={`${
           errors[name]?.message ? "border-red-400" : "border-zinc-500"
-        } mt-2 mb-6 rounded-lg px-[1.2rem] py-[0.8rem]  hover:border-teal-800 focus:outline-teal-800 border`}
+        } sm:h-[7rem] mt-2 mb-6 rounded-lg px-[1.2rem] py-[0.8rem]  hover:border-teal-800 focus:outline-teal-800 border`}
         placeholder={placeholder}
         {...register(name)}
       ></textarea>

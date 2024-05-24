@@ -57,11 +57,17 @@ export default function Home() {
     <FormProvider {...methods}>
       <form
         onSubmit={methods.handleSubmit(handleContactForm)}
-        className="transition-all min-h-[60rem] w-full bg-white p-6 rounded-2xl flex flex-col text-zinc-800"
+        className="sm:min-h-[40rem] sm:max-w-[45rem] transition-all min-h-[60rem] w-full bg-white p-6 rounded-2xl flex flex-col text-zinc-800"
       >
         <h1 className="font-bold text-4xl  mb-4">Contact Us</h1>
-        <FormInput name="firstName" label="First Name" placeholder="John" />
-        <FormInput name="lastName" label="Last Name" placeholder="Appleseed" />
+        <div className=" sm:flex w-full sm:justify-between sm:gap-4">
+          <FormInput name="firstName" label="First Name" placeholder="John" />
+          <FormInput
+            name="lastName"
+            label="Last Name"
+            placeholder="Appleseed"
+          />
+        </div>
         <FormInput
           name="emailAddress"
           label="Email Address"

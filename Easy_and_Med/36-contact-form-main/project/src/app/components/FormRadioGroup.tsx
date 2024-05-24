@@ -15,12 +15,12 @@ export function FormRadioGroup({ name, options, label }: FormRadioGroupProps) {
 
   return (
     <>
-      <label className="mb-4">{label}</label>
-      <div className="flex flex-col gap-4 mb-6">
+      <label className="mb-2">{label}</label>
+      <div className="flex flex-col gap-4 mb-6 sm:flex-row border">
         {options.map((option) => (
           <div
             key={option.value}
-            className="relative flex items-center h-[3.2rem]"
+            className="relative flex items-center h-[3.2rem] sm:w-full"
           >
             <input
               {...register(name)}

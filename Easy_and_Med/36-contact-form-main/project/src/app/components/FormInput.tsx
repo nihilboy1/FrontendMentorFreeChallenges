@@ -28,18 +28,15 @@ export function FormInput({
     formState: { errors },
   } = useFormContext<ContactFormSchema>();
 
-
   return (
-    <>
-      <label htmlFor={name} className="flex flex-col ">
-        {label}
-      </label>
+    <div className="flex flex-col w-full ">
+      <label htmlFor={name}>{label}</label>
       <input
         type={type}
         id={name}
         className={`${
           errors[name]?.message ? "border-red-400" : "border-zinc-500"
-        } mt-2 mb-6 rounded-lg px-[1.2rem] py-[0.8rem] hover:border-teal-800 focus:outline-teal-800 border`}
+        } w-full mt-2 mb-6 rounded-lg px-[1.2rem] py-[0.8rem] hover:border-teal-800 focus:outline-teal-800 border`}
         placeholder={placeholder}
         {...register(name)}
       />
@@ -51,6 +48,6 @@ export function FormInput({
           <p className="mt-[-1.1rem] mb-5 text-red-400">{message}</p>
         )}
       />
-    </>
+    </div>
   );
 }
