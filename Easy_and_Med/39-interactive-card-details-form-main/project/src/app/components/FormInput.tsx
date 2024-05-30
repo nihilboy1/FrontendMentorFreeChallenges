@@ -32,6 +32,8 @@ export function FormInput({
         ? 3
         : name === "cardHolderName"
         ? 16
+        : name === "yearExp"
+        ? 4
         : 2;
     if (value.length <= maxLength) {
       setInputState(formatCardNumber(value.toUpperCase()));
